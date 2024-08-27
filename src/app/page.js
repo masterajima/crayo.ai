@@ -1,12 +1,12 @@
+import Hero from '@/components/ui/home/hero';
 import { Container } from '../components/ui/containers';
 
 const Home = () => {
   return (
     <Container className='flex justify-center items-center text-center h-[85vh]'>
-      <h1 className='text-4xl font-bold'>
-        Rishit Patel&apos;s <span className='text-purple-600'>Next.js</span>{' '}
-        Starter
-      </h1>
+      <div className='flex flex-col items-center justify-center'>
+        <Hero />
+      </div>
     </Container>
   );
 };
