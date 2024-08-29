@@ -38,7 +38,7 @@ const Hero = () => {
             <div className='flex flex-row justify-start gap-4'>
               <Link
                 href='https://crayo.ai/dashboard'
-                className='bg-white opacity-1 flex items-center gap-8 p-2 px-4 rounded-full'>
+                className='bg-white opacity-1 flex items-center gap-8 p-2 px-8 rounded-full'>
                 <div className='bg-blue-300 opacity-1 flex flex-row w-[24px] h-[24px] pr-2 rounded-full'>
                   <div className='flex flex-row items-center overflow-visible gap-10 opacity-1'>
                     <div className='overflow-hidden h-[16px] w-[16px]'>
@@ -88,10 +88,39 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-                <div className='flex flex-col opacity-1 z-1'>
+                <div className='flex  opacity-1 z-1'>
                   <p className='text-blue-900 mr-2'>Learn more</p>
                 </div>
               </Link>
+            </div>
+          </div>
+          <div className='flex items-center gap-4 w-[16px] h-[17px] overflow-visible'></div>
+          <div className=' flex flex-col items-start justify-start w-full overflow-hidden'>
+            <div className='relative w-[500px] h-[92px]'>
+              <div className='absolute inset-0 block '>
+                <Image
+                  src='/assets/images/genrate.avif'
+                  alt='genrate'
+                  layout='fill'
+                  priority={true}
+                  className='object-cover object-center w-full h-full'
+                />
+              </div>
+            </div>
+          </div>
+          <div className='mx-auto px-4 py-8'>
+            <div className='flex flex-wrap justify-center items-center gap-4'>
+              <div className='flex items-center bg-white bg-opacity-40 rounded-full px-4 py-2'>
+                <svg
+                  style='width:100%;height:100%'
+                  viewBox='0 0 15 15'
+                  preserveAspectRatio='none'
+                  width='100%'
+                  height='100%'>
+                  <use href='#svg1809950946_727'></use>
+                </svg>
+                <span className='text-blue-900'>AI Voice</span>
+              </div>
             </div>
           </div>
         </Card>
