@@ -79,7 +79,14 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href='/guide'
-                  className='px-4 py-2 text-sm font-medium bg-white text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '></Link>
+                  className='px-4 py-2 text-sm font-medium bg-white text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
+                  Guide
+                </Link>
+                <Link
+                  href='https://crayo.ai/dashboard'
+                  className='flex items-center px-6 py-2 rounded-full hover:bg-gray-100 '>
+                  <span className='mr-2 '></span>
+                </Link>
               </div>
               <div className='bg-white rounded-full'>
                 <Link
