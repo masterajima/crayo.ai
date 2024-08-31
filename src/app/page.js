@@ -3,7 +3,7 @@ import { Container } from '../components/ui/containers';
 
 const Home = () => {
   return (
-    <Container className='flex justify-center items-center text-center w-full h-[85vh]'>
+    <Container className='flex justify-center items-center text-center w-full '>
       <Hero />
     </Container>
   );
