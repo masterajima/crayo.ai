@@ -9,7 +9,7 @@ const Navbar = () => {
       <Container className='flex flex-col '>
         <div className='hidden sm:hidden md:hidden lg:block'>
           <div className='bg-white bg-opacity-90 w-full rounded-lg backdrop-blur-lg'>
-            <div className='flex items-start justify-between p-4'>
+            <div className='flex items-start justify-between p-2'>
               <Link
                 href='/'
                 className='w-30 h-7 block'>
@@ -60,26 +60,26 @@ const Navbar = () => {
                 </svg>
                 Last edited just now Publish
               </Link>
-              <div className='flex space-x-2'>
+              <div className='flex items-start space-x-2'>
                 <Link
                   href='/pricing'
-                  className='px-4 py-2 text-sm font-medium text-[#00084D] bg-opacity-50 border border-white border-opacity-40 rounded-full hover:bg-opacity-50 transition duration-300 bg-white '>
+                  className='px-4 py-2 text-sm font-medium text-[#00084D] bg-opacity-50 border border-white border-opacity-40 rounded-full hover:bg-opacity-50 transition duration-300 bg-blue-300 '>
                   Pricing
                 </Link>
                 <Link
                   href='/blog'
-                  className='px-4 py-2 text-sm font-medium bg-white text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
+                  className='px-4 py-2 text-sm font-medium  text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 bg-blue-300 '>
                   Insight
                 </Link>
 
                 <Link
                   href='https://crayo.tolt.io/login'
-                  className='px-4 py-2 text-sm font-medium bg-white text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
+                  className='px-4 py-2 text-sm font-medium bg-blue-300 text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
                   Affiliate
                 </Link>
                 <Link
                   href='/guide'
-                  className='px-4 py-2 text-sm font-medium bg-white text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
+                  className='px-4 py-2 text-sm font-medium bg-blue-300 text-[#00084D] bg-opacity-50 border border-white rounded-full hover:bg-opacity-50 transition duration-300 '>
                   Guide
                 </Link>
                 <Link
