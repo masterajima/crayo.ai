@@ -17,9 +17,9 @@ const WorkCrayo = () => {
             </div>
           </div>
           <div className='flex flex-col items-center md:items-start gap-10'>
-            <h2 clssName='font-semibold text-4xl text-[#000d49]'>
-              From Ideas to Short Videos
-            </h2>
+            <h1 clssName='font-semibold text-6xl text-[#000d49]'>
+              From Ideas to Short Videos in Second
+            </h1>
           </div>
         </div>
       </div>
