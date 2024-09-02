@@ -6,9 +6,9 @@ import Image from 'next/image';
 const Navbar = () => {
   return (
     <nav className='py-4 border-b-2'>
-      <Container className='flex flex-col '>
+      <div className='flex flex-col px-6 '>
         <div className='hidden sm:hidden md:hidden lg:block'>
-          <div className='bg-white bg-opacity-90 w-full rounded-lg backdrop-blur-lg'>
+          <div className='bg-blue-300 bg-opacity-90 w-full rounded-full backdrop-blur-lg '>
             <div className='flex items-start justify-between p-2'>
               <Link
                 href='/'
@@ -113,7 +113,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </nav>
   );
 };

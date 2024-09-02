@@ -4,10 +4,10 @@ import WorkCrayo from '@/components/ui/home/work';
 
 const Home = () => {
   return (
-    <Container className='flex flex-col justify-center items-center text-center w-full '>
+    <div className='flex flex-col justify-start items-start text-center px-6 w-full '>
       <Hero />
       <WorkCrayo></WorkCrayo>
-    </Container>
+    </div>
   );
 };
 
