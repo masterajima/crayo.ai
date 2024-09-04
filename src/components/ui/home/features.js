@@ -83,7 +83,7 @@ const FeaturesPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className='flex items-start rounded-full p-2  bg-[#d6e8ff] border-[#e1ebff] gap-2'>
+                    <div className='flex items-start  p-2  gap-2'>
                       <svg
                         viewBox='0 0 15 15'
                         preserveAspectRatio='none'
@@ -92,8 +92,8 @@ const FeaturesPage = () => {
                         <use href='#svg2134566869_1463'></use>
                       </svg>
                     </div>
-                    <div className='flex flex-col items-start justify-start mt-4'>
-                      <p className='text-[#000d4980] text-sm'>Genrate Script</p>
+                    <div className='flex flex-col items-start justify-start mt-4 p-2 bg-[#d6e8ff] rounded-full'>
+                      <p className='text-[#000D49] text-sm font-bold'>Genrate Script</p>
                     </div>
 
                     <div className='flex flex-col items-start justify-start'>
