@@ -80,38 +80,76 @@ const FeaturesPage = () => {
           <div className='flex flex-col items-start justify-start gap-2 mt-4'>
             <p className='text-[#000d49] text-[11.6px]'>Select Story Baackground</p>
           </div>
-          <div className='flex items-start justify-start gap-4 bg-[#e9e4] border-[#e9e9fd] rounded-lg'>
+          <div className='flex items-start justify-start gap-4 bg-[]border-[#e9e9fd] rounded-lg'>
             <div className='flex items-center justify-center gap-8 border-[#e9e9fd]'>
               <div className='h-[102px] w-[400px] block'>
                 <section className='flex items-center p-3 opacity-1 '>
                   <ul className=' list-none flex items-center justify-center gap-2 border-[#e3e3ff] transform duration-300 '>
                     <li>
-                      <div className='border-[#e3e3ff] bg-[#e9e5ff] rounded-lg'>
-                        <div className='absolute inset-0'>
-                          <Image
-                            src='/assets/images/user.avif'
-                            alt='user'
-                            width={200}
-                            height={200}
-                            className='object-cover object-center'
-                          />
+                      <div className='flex flex-col items-start justify-start p-2 gap-4  bg-white rounded-lg w-full'>
+                        <div className='border-[#e3e3ff] bg-[#e9e5ff] rounded-lg '>
+                          <div className=' inset-0'>
+                            <Image
+                              src='/assets/images/user.avif'
+                              alt='user'
+                              width={100}
+                              height={102}
+                              className='object-cover object-center rounded-lg'
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className='flex flex-col border-[#e8e8fd] rounded-lg  bg-white w-full gap-8 p-3'>
+                        <div className='w-[100px] h-[88px] '>
+                          <div className=' inset-0 border-[#e8e8fd] rounded-lg'>
+                            <Image
+                              src='/assets/images/train.png'
+                              alt='train'
+                              width={100}
+                              height={102}
+                              className='object-cover object-center rounded-lg'
+                            />
+                          </div>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div className='w-[100px] h-[88px] relative'>
-                        <div className='absolute inset-0 border-[#e8e8fd]'>
-                          <Image
-                            src='/assets/images/train.png'
-                            alt='train'
-                            width={200}
-                            height={200}
-                          />
+                      <div className='flex flex-col items-start rounded-lg p-2 bg-white border-2 border-[#e8e8fd] '>
+                        <div className='w-[98px] h-[88px]'>
+                          <div className=' inset-0'>
+                            <Image
+                              src='/assets/images/heel.avif'
+                              alt='heel'
+                              width={100}
+                              height={102}
+                              className='object-cover object-center rounded-lg'
+                            />
+                          </div>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </section>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-start justify-start gap-2 mt-4'>
+            <p className='text-[11.6px] text-[#311e57] font-semibold'>
+              Select Story Background
+            </p>
+          </div>
+          <div className='w-[378px] h-[37px] mt-4'>
+            <div className='bg-white border-[#e8e8fd] rounded-lg'>
+              <div className='flex gap-2 z-1 bottom-5 border-[#e9e9fd]'>
+                <div className='flex items-center justify-center p-2 rounded-lg bg-[#e9e5ff]'>
+                  <p className='text-[9.7px] text-[#51497f]'>William - Male</p>
+                </div>
+                <div className='flex items-center justify-center p-2 rounded-lg bg-[#E9E5FF66]'>
+                  <p className='text-[9.7px] text-[#51497f]'>William - Male</p>
+                </div>
               </div>
             </div>
           </div>
