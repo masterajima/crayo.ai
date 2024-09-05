@@ -5,6 +5,7 @@ import StoryTopicInput from '@/components/story-topic';
 import StoryTone from '@/components/story-tone';
 import MaxWordAInput from '@/components/max-word';
 import GenrateScript from '@/components/genrate-script';
+import Image from 'next/image';
 
 const FeaturesPage = () => {
   const storyTopics = ['Clockwork Detective', 'Garden of Whispers', 'Mystory Manor'];
@@ -48,7 +49,22 @@ const FeaturesPage = () => {
       </CardComponent>
       <CardComponent className='md:w-[30%]'>
         <div className='flex flex-col items-start justify-start h-[500px]'>
-          <p className=''></p>
+          <p className='text-[#000d49] text-[11.64px] '>Select your Font Style</p>
+          <div className='border-[#e8e8fd] bg-white flex flex-col items-start justify-start gap-[10px] p-2 rounded-lg mt-4'>
+            <div className='flex items-center justify-centr h-[52px] gap-[7px] border-[#e8e8fd]'>
+              <div className='flex items-center justify-center bg-[#e9e4ff] p-2 gap-2 rounded-lg border-[#e8e8fd]'>
+                <div className='w-[126px] relative flex'>
+                  <Image
+                    src='/assets/images/quick.avif'
+                    alt=''
+                    width={126}
+                    height={126}
+                    className='object-fill object-center'
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </CardComponent>
     </div>
