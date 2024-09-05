@@ -10,7 +10,7 @@ const FeaturesPage = () => {
   const storyTopics = ['Clockwork Detective', 'Garden of Whispers', 'Mystory Manor'];
   const storyTone = ['Funny', 'Mystory', 'Horror'];
   return (
-    <div className='flex flex-col items-center md:items-start justify-center md:justify-start lg:p-12 md:p-8  w-full'>
+    <div className='flex flex-col lg:flex-row gap-4 items-center md:items-start justify-center md:justify-start lg:p-12 md:p-8  w-full'>
       <CardComponent className='md:w-[30%]'>
         <div className='flex flex-col w-full h-[480px] lg:items-start '>
           <div className='flex flex-col items-start justify-start  gap-4 lg:px-3 mt-6'>
@@ -44,6 +44,11 @@ const FeaturesPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </CardComponent>
+      <CardComponent className='md:w-[30%]'>
+        <div className='flex flex-col items-start justify-start h-[500px]'>
+          <p className=''></p>
         </div>
       </CardComponent>
     </div>
