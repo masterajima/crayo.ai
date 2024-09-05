@@ -50,7 +50,7 @@ const FeaturesPage = () => {
       <CardComponent className='md:w-[30%]'>
         <div className='flex flex-col items-start justify-start h-[500px]'>
           <p className='text-[#000d49] text-[11.64px] '>Select your Font Style</p>
-          <div className='border-[#e8e8fd] bg-white flex flex-col items-start justify-start gap-[10px] p-2 rounded-lg mt-4'>
+          <div className='border-[#e8e8fd] bg-white flex flex-col items-start justify-start gap-2 p-2 rounded-lg mt-4'>
             <div className='flex items-center justify-centr h-[52px] gap-[7px] border-[#e8e8fd]'>
               <div className='flex items-center justify-center bg-[#e9e4ff] p-2 gap-2 rounded-lg border-[#e8e8fd]'>
                 <div className='w-[126px] relative flex'>
@@ -62,6 +62,32 @@ const FeaturesPage = () => {
                     className='object-fill object-center'
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex items-center p-2 gap-2 rounded-lg bg-[#e9e5ff4d] border-[#e8e8fd]'>
+            <div className='flex items-center justify-center h-[52px] gap-[7px] border-[#e8e8fd]'>
+              <div className='flex w-[126px]'>
+                <Image
+                  src='/assets/images/brown.png'
+                  alt='brown'
+                  width={126}
+                  height={126}
+                />
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-start justify-start gap-2 mt-4'>
+            <p className='text-[#000d49] text-[11.6px]'>Select Story Baackground</p>
+          </div>
+          <div className='flex items-start justify-start gap-4 bg-[#e9e4] border-[#e9e9fd] rounded-lg'>
+            <div className='flex items-center justify-center gap-8 border-[#e9e9fd]'>
+              <div className='h-[102px] w-[400px] block'>
+                <section className='flex items-center p-3 opacity-1 '>
+                  <ul className='list-none flex items-center justify-center gap-2 border-[#e9e9fd]'>
+                    <li className=''></li>
+                  </ul>
+                </section>
               </div>
             </div>
           </div>
