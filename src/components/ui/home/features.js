@@ -84,8 +84,32 @@ const FeaturesPage = () => {
             <div className='flex items-center justify-center gap-8 border-[#e9e9fd]'>
               <div className='h-[102px] w-[400px] block'>
                 <section className='flex items-center p-3 opacity-1 '>
-                  <ul className='list-none flex items-center justify-center gap-2 border-[#e9e9fd]'>
-                    <li className=''></li>
+                  <ul className=' list-none flex items-center justify-center gap-2 border-[#e3e3ff] transform duration-300 '>
+                    <li>
+                      <div className='border-[#e3e3ff] bg-[#e9e5ff] rounded-lg'>
+                        <div className='absolute inset-0'>
+                          <Image
+                            src='/assets/images/user.avif'
+                            alt='user'
+                            width={200}
+                            height={200}
+                            className='object-cover object-center'
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='w-[100px] h-[88px] relative'>
+                        <div className='absolute inset-0 border-[#e8e8fd]'>
+                          <Image
+                            src='/assets/images/train.png'
+                            alt='train'
+                            width={200}
+                            height={200}
+                          />
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </section>
               </div>
