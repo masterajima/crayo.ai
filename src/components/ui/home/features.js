@@ -52,28 +52,29 @@ const FeaturesPage = () => {
           <p className='text-[#000d49] text-[11.64px] '>Select your Font Style</p>
           <div className='border-[#e8e8fd] bg-white flex flex-col items-start justify-start gap-2 p-2 rounded-lg mt-4'>
             <div className='flex items-center justify-centr h-[52px] gap-[7px] border-[#e8e8fd]'>
-              <div className='flex items-center justify-center bg-[#e9e4ff] p-2 gap-2 rounded-lg border-[#e8e8fd]'>
+              <div className='flex items-center justify-center bg-[#e9e4ff] p-2  rounded-lg border-[#e8e8fd] gap-4'>
                 <div className='w-[126px] relative flex'>
                   <Image
                     src='/assets/images/quick.avif'
-                    alt=''
+                    alt='quick'
                     width={126}
                     height={126}
                     className='object-fill object-center'
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className='flex items-center p-2 gap-2 rounded-lg bg-[#e9e5ff4d] border-[#e8e8fd]'>
-            <div className='flex items-center justify-center h-[52px] gap-[7px] border-[#e8e8fd]'>
-              <div className='flex w-[126px]'>
-                <Image
-                  src='/assets/images/brown.png'
-                  alt='brown'
-                  width={126}
-                  height={126}
-                />
+
+                <div className='flex items-center p-2 gap-2 rounded-lg bg-[#e9e5ff4d] border-[#e8e8fd]'>
+                  <div className='flex items-center justify-center h-[52px] gap-[7px] border-[#e8e8fd]'>
+                    <div className='flex w-[126px]'>
+                      <Image
+                        src='/assets/images/brown.png'
+                        alt='brown'
+                        width={126}
+                        height={126}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -148,10 +149,50 @@ const FeaturesPage = () => {
                   <p className='text-[9.7px] text-[#51497f]'>William - Male</p>
                 </div>
                 <div className='flex items-center justify-center p-2 rounded-lg bg-[#E9E5FF66]'>
-                  <p className='text-[9.7px] text-[#51497f]'>William - Male</p>
+                  <p className='text-[9.7px] text-[#51497f]'>Henry - Male</p>
+                </div>
+                <div className='flex items-center justify-center p-2 rounded-lg bg-[#E9E5FF66]'>
+                  <p className='text-[9.7px] text-[#51497f]'>Jason - Male</p>
+                </div>
+                <div className='flex items-center justify-center p-2 rounded-lg bg-[#E9E5FF66]'>
+                  <p className='text-[9.7px] text-[#51497f]'>Hannah - Male</p>
                 </div>
               </div>
             </div>
+          </div>
+          <div className='flex flex-col items-start justify-start gap-4'>
+            <p className='text-[#311e57] text-[18px]'>2-</p>
+          </div>
+          <div className='flex flex-col items-start justify-start'>
+            <h3 className='text-[#311e57] font-bold'>Customize and Style</h3>
+          </div>
+          <div className=''>
+            <p className='text-[#311E5780] text-[15px] w-2/3'>
+              Select background video, voice and a music from free templates.
+            </p>
+          </div>
+        </div>
+      </CardComponent>
+      <CardComponent className='h-[480px] w-[30%]'>
+        <div className='flex flex-col items-center justify-center p-8 gap-4 border-[#e9f0ff] bg-[#f9fbff]'>
+          <svg
+            width='0'
+            height='0'>
+            <symbol
+              id='svg-1548840394_4038'
+              viewBox='0 0 100 100'></symbol>
+          </svg>
+
+          <svg
+            style={{ width: '100%', height: '100%' }}
+            viewBox='0 0 786 252'
+            preserveAspectRatio='none'
+            width='100%'
+            height='100%'>
+            <use href='#svg-1548840394_4038' />
+          </svg>
+          <div className='flex  items-center justify-center translate-x-[-50%] p-2 bg-[#e4eeff] border-[#e9f0ff] rounded-full'>
+            <p className='text-[10.6px] text-[#000d49]'>Exporting Video...50%</p>
           </div>
         </div>
       </CardComponent>
