@@ -173,26 +173,30 @@ const FeaturesPage = () => {
           </div>
         </div>
       </CardComponent>
-      <CardComponent className='h-[480px] w-[30%]'>
-        <div className='flex flex-col items-center justify-center p-8 gap-4 border-[#e9f0ff] bg-[#f9fbff]'>
-          <svg
-            width='0'
-            height='0'>
-            <symbol
-              id='svg-1548840394_4038'
-              viewBox='0 0 100 100'></symbol>
-          </svg>
-
-          <svg
-            style={{ width: '100%', height: '100%' }}
-            viewBox='0 0 786 252'
-            preserveAspectRatio='none'
-            width='100%'
-            height='100%'>
-            <use href='#svg-1548840394_4038' />
-          </svg>
-          <div className='flex  items-center justify-center translate-x-[-50%] p-2 bg-[#e4eeff] border-[#e9f0ff] rounded-full'>
+      <CardComponent className=' w-[30%]'>
+        <div className='flex flex-col items-center justify-center  gap-4 border-[#e9f0ff] bg-[#f9fbff]'>
+          <div className='w-full h-full border-[#e9f0ff]'></div>
+          <div className='flex  items-center justify-center  p-2 bg-[#e4eeff] border-[#e9f0ff] rounded-full'>
             <p className='text-[10.6px] text-[#000d49]'>Exporting Video...50%</p>
+          </div>
+          <div className='opacity-1  '>
+            <Image
+              src='/assets/images/circle.avif'
+              alt='circle'
+              width={100}
+              height={100}
+              className='object-cover object-center'
+            />
+          </div>
+          <div className='flex flex-col items-start justify-start gap-4'>
+            <p className='text-[18px] text-[#000d49]'>3-</p>
+            <h3 className='text-[#000d49] text-[17px] font-bold'>Finish&Export</h3>
+
+            <div className=''>
+              <p className='text-[15px] text-[#000d4980]'>
+                Choose export format and download generated videos, script or narration.
+              </p>
+            </div>
           </div>
         </div>
       </CardComponent>
