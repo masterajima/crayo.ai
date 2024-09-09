@@ -18,7 +18,7 @@ const ToolsPage = () => {
             </div>
           </Link>
           <div className=' gap-4 flex flex-col items-center mt-8'>
-            <h2 className='md:w-[350px] lg:w-full text-[35px] font-semibold text-white'>
+            <h2 className='md:w-[350px] lg:w-[60%] text-[35px] font-semibold text-white'>
               All in one tool for Genrating
               <span className='text-white text-[35px]'>viral Shorts using AI</span>
             </h2>
@@ -81,20 +81,113 @@ const ToolsPage = () => {
               </Link>
             </div>
           </div>
-          <Card className='flex  items-center justify-center rounded-3xl bg-[#ffffff0f] border-[#e9f0ff1a] lg:h-[540px]  w-full lg:w-2/3 lg:mt-8 gap-12 mb-8'>
-            <div className='flex flex-col items-start'>
-              <div className='flex itmems-start p-2 rounded-full px-3 gap-2 bg-[#e9f0ff0a] border-[#9ab6ff] border-2 rotate-[-0.0522561rad] -translate-x-1/2 -translate-y-1/2 mb-4'>
-                <div className='h-[33px] w-[33px]'>
-                  <div className='w-full h-full  '>
+          <div className='flex items-center justify-center gap-8 w-full px-12 p-12'>
+            <Card className='flex  items-center justify-center rounded-3xl bg-[#ffffff0f] border-[#e9f0ff1a] lg:h-[540px]  w-full  p-18 lg:mt-8 gap-6 mb-8 px-8'>
+              <div className='flex flex-col items-start'>
+                <div className='flex itmems-start p-2 rounded-full px-3 gap-2 bg-[#e9f0ff0a] border-[#9ab6ff] border-2 rotate-[-0.0522561rad] -translate-x-1/2 -translate-y-1/2 mb-4'>
+                  <div className='h-[22px] w-[22px]'>
+                    <div className='w-full h-full  '>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        class='icon icon-tabler icon-tabler-music'
+                        width='33'
+                        height='33'
+                        viewBox='0 0 24 24'
+                        stroke-width='1.5'
+                        stroke='#2c3e50'
+                        fill='none'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'>
+                        <path
+                          stroke='none'
+                          d='M0 0h24v24H0z'
+                          fill='none'
+                        />
+                        <path d='M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' />
+                        <path d='M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' />
+                        <path d='M9 17v-13h10v13' />
+                        <path d='M9 8h10' />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <span className='text-white text-lg font-[Inter] tracking-tight'>
+                    Popular Music
+                  </span>
+                </div>
+
+                <div className='flex items-center p-2 rounded-full px-3 gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] -translate-x-1/2 -translate-y-1/2 rotate-[-0.0522561rad]'>
+                  <div className='h-[24px] w-[24px]'>
+                    <div className='w-full h-full  bg-white'>
+                      <svg style={{ width: '7', height: '7' }}>
+                        <use href='#svg1124643241'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className='text-white text-lg font-[Inter] tracking-tight'>
+                    Voice Narrator
+                  </span>
+                </div>
+
+                <div className='flex items-center p-2 rounded-full px-3 gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] -translate-x-1/2 -translate-y-1/2 rotate-[-0.0522561rad]'>
+                  <div className='h-[24px] w-[24px]'>
+                    <div className='w-full h-full  bg-white'>
+                      <svg style={{ width: '7', height: '7' }}>
+                        <use href='#svg1124643241'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className='text-white text-lg font-[Inter] tracking-tight'>
+                    Background Video
+                  </span>
+                </div>
+                <div className='flex items-center p-2 rounded-full  gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] border-2 rotate-[0.000354249rad] translate-x-1/2 -translate-y-1/2 px-6'>
+                  <div className='h-[24px] w-[24px]'>
+                    <div className='w-full h-full  bg-white'>
+                      <svg style={{ width: '100%', height: '100%' }}>
+                        <use href='#svg3962925672'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className='text-white text-lg font-[Inter] tracking-tight '>
+                    AI Image Genration
+                  </span>
+                </div>
+                <div className='flex items-center p-2 rounded-full  gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] border-2 rotate-[0.000354249rad] translate-x-1/2 -translate-y-1/2 px-6'>
+                  <div className='h-[24px] w-[24px]'>
+                    <div className='w-full h-full  bg-white'>
+                      <svg style={{ width: '7', height: '7' }}>
+                        <use href='#svg1124643241'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className='text-white text-lg font-[Inter] tracking-tight '>
+                    Multi plateform
+                  </span>
+                </div>
+                <div className='flex items-center p-2 rounded-full  gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] border-2 rotate-[0.000354249rad] translate-x-1/2 translate-y-1/2 px-6'>
+                  <div className='h-[24px] w-[24px]'>
+                    <div className='w-full h-full  bg-white'>
+                      <svg style={{ width: '7', height: '7' }}>
+                        <use href='#svg1124643241'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <span className='text-white text-lg font-[Inter] tracking-tight '>
+                    Manual Editing
+                  </span>
+                </div>
+                <Card className='flex items-center justify-center rounded-3xl bg-[#d9d9d908] border-[#e9f0ff1a] gap-3 p-6 mt-8'>
+                  <div className='flex flex-col items-start justify-start gap-2'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
-                      class='icon icon-tabler icon-tabler-music'
-                      width='33'
-                      height='33'
+                      class='icon icon-tabler icon-tabler-box-multiple'
+                      width='44'
+                      height='44'
                       viewBox='0 0 24 24'
                       stroke-width='1.5'
                       stroke='#2c3e50'
-                      fill='none'
+                      fill='white'
                       stroke-linecap='round'
                       stroke-linejoin='round'>
                       <path
@@ -102,58 +195,88 @@ const ToolsPage = () => {
                         d='M0 0h24v24H0z'
                         fill='none'
                       />
-                      <path d='M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' />
-                      <path d='M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0' />
-                      <path d='M9 17v-13h10v13' />
-                      <path d='M9 8h10' />
+                      <path d='M7 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z' />
+                      <path d='M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2' />
+                    </svg>
+                    <h3 className='text-[17px] text-white font-[Inter] '>
+                      Automated Video in Second
+                    </h3>
+                    <p className='text-[#ffffff99] text-sm'>
+                      Auto generate captions, effects, background and music for you.
+                    </p>
+                  </div>
+                </Card>
+              </div>
+            </Card>
+            <Card
+              className='flex flex-col  items-start justify-start rounded-3xl bg-[#f9fbff08] border-[#e9f0ff1a
+] lg:h-[470px]  w-full p-3 lg:mt-8 gap-12 mb-8'>
+              <div className='flex flex-col items-center justify-center top-[73px] absolute h-[195px] z-1 w-[232px] '>
+                <div className='h-[196px] w-[135px] '>
+                  <div className='w-full h-full border-[#e9f0ff1a] rounded-3xl'>
+                    <svg
+                      style={{ width: '100%', height: '100%' }}
+                      viewBox='0 0 135 196'
+                      preserveAspectRatio='none'
+                      width='100%'
+                      height='100%'>
+                      <use href='#svg1373418638_465'></use>
                     </svg>
                   </div>
                 </div>
-
-                <span className='text-white text-lg font-[Inter] tracking-tight'>
-                  Popular Music
-                </span>
-              </div>
-
-              <div className='flex items-center p-2 rounded-full px-3 gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] -translate-x-1/2 -translate-y-1/2 rotate-[-0.0522561rad]'>
-                <div className='h-[24px] w-[24px]'>
-                  <div className='w-full h-full  bg-white'>
-                    <svg style={{ width: '7', height: '7' }}>
-                      <use href='#svg1124643241'></use>
+                <div className='w-[135px] h-[215px] absolute'>
+                  <div className='relative w-full h-full bg-[#d9d9d908] border-[#ffffff0f] rounded-3xl'>
+                    <svg
+                      style={{ width: '100%', height: '100%' }}
+                      viewBox='0 0 135 196'
+                      preserveAspectRatio='none'
+                      width='100%'
+                      height='100%'>
+                      <use href='#svg859100512_464'></use>
                     </svg>
                   </div>
                 </div>
-                <span className='text-white text-lg font-[Inter] tracking-tight'>
-                  Voice Narrator
-                </span>
               </div>
-
-              <div className='flex items-center p-2 rounded-full px-3 gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] -translate-x-1/2 -translate-y-1/2 rotate-[-0.0522561rad]'>
-                <div className='h-[24px] w-[24px]'>
-                  <div className='w-full h-full  bg-white'>
-                    <svg style={{ width: '7', height: '7' }}>
-                      <use href='#svg1124643241'></use>
-                    </svg>
-                  </div>
+              <div className='border-[#a2a5eb] border-2 flex flex-col items-center translate-x-1/2 p-4 bg-[#55577f1a] rounded-3xl'>
+                <div className='h-[213px] w-[145px] border-[#a2a5eb] rounded-3xl '>
+                  <video
+                    autoPlay
+                    src='https://framerusercontent.com/assets/4Bdjj2NXSOa3V5aPSVieDrJC9bk.mp4'
+                    className='object-cover cursor-auto bg-black border-[#a2a5eb] border-2 rounded-xl'></video>
                 </div>
-                <span className='text-white text-lg font-[Inter] tracking-tight'>
-                  Background Video
-                </span>
+                <div clas></div>
               </div>
-              <div className='flex items-center p-2 rounded-full  gap-2 bg-[#9ab7ff1a] border-[#9ab6ff] border-2 rotate-[0.000354249rad] translate-x-1/2 translate-y-1/2 px-6'>
-                <div className='h-[24px] w-[24px]'>
-                  <div className='w-full h-full  bg-white'>
-                    <svg style={{ width: '7', height: '7' }}>
-                      <use href='#svg1124643241'></use>
-                    </svg>
-                  </div>
+              <Card className='flex fle-col items-center justify-center bg-[#d9d9d908] border-[#ffffff0f] rounded-3xl p-6'>
+                <div className='flex flex-col items-start justify-start'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    class='icon icon-tabler icon-tabler-ad'
+                    width='44'
+                    height='44'
+                    viewBox='0 0 24 24'
+                    stroke-width='1.5'
+                    stroke='#2c3e50'
+                    fill='none'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'>
+                    <path
+                      stroke='none'
+                      d='M0 0h24v24H0z'
+                      fill='none'
+                    />
+                    <path d='M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z' />
+                    <path d='M7 15v-4a2 2 0 0 1 4 0v4' />
+                    <path d='M7 13l4 0' />
+                    <path d='M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5' />
+                  </svg>
+                  <h3 className='text-white text-[17px] font-[Inter]'>Auto Subtitle</h3>
+                  <p className='text-[#ffffff99] text-sm'>
+                    Automatic AI subtitle genrator
+                  </p>
                 </div>
-                <span className='text-white text-lg font-[Inter] tracking-tight '>
-                  Manual Editing
-                </span>
-              </div>
-            </div>
-          </Card>
+              </Card>
+            </Card>
+          </div>
         </div>
       </Card>
     </div>
