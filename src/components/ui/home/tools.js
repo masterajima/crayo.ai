@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ToolsPage = () => {
   return (
-    <div className='flex flex-col md:items-center md:justify-center lg:p-12  w-full'>
+    <div className='flex flex-col md:items-center md:justify-center lg:p-20  w-full'>
       <Card className='flex flex-col lg:items-start lg:justify-start md:items-center md:justify-center rounded-3xl border-gray-800  bg-gray-900 lg:p-18 w-full h-full'>
         <div className='flex flex-col items-start justify-start md:items-center md:justify-center mt-8'>
           <Link
@@ -209,8 +209,8 @@ const ToolsPage = () => {
               </div>
             </Card>
             <Card
-              className='flex flex-col  items-start justify-start rounded-3xl bg-[#f9fbff08] border-[#e9f0ff1a
-] lg:h-[470px]  w-full p-3 lg:mt-8 gap-12 mb-8'>
+              className='flex flex-col  items-center justify-center rounded-3xl bg-[#f9fbff08] border-[#e9f0ff1a
+] lg:h-[470px]  w-full p-18 lg:mt-8 gap-12 mb-8'>
               <div className='flex flex-col items-center justify-center top-[73px] absolute h-[195px] z-1 w-[232px] '>
                 <div className='h-[196px] w-[135px] '>
                   <div className='w-full h-full border-[#e9f0ff1a] rounded-3xl'>
@@ -237,16 +237,17 @@ const ToolsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className='border-[#a2a5eb] border-2 flex flex-col items-center translate-x-1/2 p-4 bg-[#55577f1a] rounded-3xl'>
-                <div className='h-[213px] w-[145px] border-[#a2a5eb] rounded-3xl '>
+              <div className='border-[#a2a5eb] border-2 flex flex-col left-1/2 items-center  p-4 bg-[#55577f1a] rounded-3xl'>
+                <div className='h-[250px] w-[145px] border-[#a2a5eb] rounded-3xl '>
                   <video
-                    autoPlay
+                    autoPlay={true}
+                    loop={true}
                     src='https://framerusercontent.com/assets/4Bdjj2NXSOa3V5aPSVieDrJC9bk.mp4'
                     className='object-cover cursor-auto bg-black border-[#a2a5eb] border-2 rounded-xl'></video>
                 </div>
-                <div clas></div>
+                <div className='flex bg-white flex-col items-center justify-center rounded-lg border-[]'></div>
               </div>
-              <Card className='flex fle-col items-center justify-center bg-[#d9d9d908] border-[#ffffff0f] rounded-3xl p-6'>
+              <Card className='flex fle-col items-center justify-center bg-[#d9d9d908] border-[#ffffff0f] rounded-3xl p-4 '>
                 <div className='flex flex-col items-start justify-start'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -275,6 +276,64 @@ const ToolsPage = () => {
                   </p>
                 </div>
               </Card>
+            </Card>
+            <Card className='flex flex-col items-start justify-start border-[#e9f0ff1a] bg-[#f9fbff08] rounded-3xl p-[10px] h-[500px] w-full'>
+              <div className='relative flex flex-col items-start justify-start gap-4 mt-8'>
+                <p className='text-[17.6px] font-[Inter] text-white'>
+                  Enter your story topic
+                </p>
+              </div>
+              <div className='relative h-[56px] w-[573px] border-[#e9f0ff1a]'>
+                <div className='absolute top-0 h-[56px] border-[#55577f66] bg-[#55577f3b] rounded-lg w-[573px]'></div>
+              </div>
+              <div className=' top-[51px] left-[21px] z-1'>
+                <p className='text-left text-[18px] font-[Inter] text-[#ffffff00]'>
+                  <span className=' text-left text-[18px] font-[Inter] text-[#ffffff00] border-[#e9f0ff1a]'>
+                    write a story about a girlfriend drama
+                  </span>
+                  <span className=''>✦</span>
+                </p>
+              </div>
+              <div className='flex gap-4'>
+                <div className='flex items-start gap-2 border-[#e9f0ff1a] rounded-full px-3 p-2 bg-[#55577f66]'>
+                  <p className='text-[14.7px] text-white'>Genrate Outline</p>
+                </div>
+                <div className='flex items-start gap-2 border-[#e9f0ff1a] rounded-full px-3 p-2 bg-[#55577f66]'>
+                  <p className='text-[14.7px] text-white'>Genrate Description</p>
+                </div>
+              </div>
+
+              <div className='flex flex-col items-start justify-start p-[26px] rounded-3xl border-[#ffffff0f] bg-[#d9d9d908] gap-3 w-full'>
+                <div className='flex flex-col items-start justify-start gap-2'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    class='icon icon-tabler icon-tabler-message-circle-2'
+                    width='44'
+                    height='44'
+                    viewBox='0 0 24 24'
+                    stroke-width='1.5'
+                    stroke='#2c3e50'
+                    fill='white'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'>
+                    <path
+                      stroke='none'
+                      d='M0 0h24v24H0z'
+                      fill='none'
+                    />
+                    <path d='M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1' />
+                  </svg>
+                  <h3 className='text-[17px] text-white font-[Inter]'>
+                    AI Script Genrator
+                  </h3>
+                </div>
+                <div className='flex flex-col items-start justify-start w-2/3'>
+                  <p className='text-[15px] text-[#ffffff99]'>
+                    Start with writing script using a prompt or using template
+                    suggestions.
+                  </p>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
