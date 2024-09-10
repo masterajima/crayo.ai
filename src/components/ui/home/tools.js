@@ -245,7 +245,7 @@ const ToolsPage = () => {
                     src='https://framerusercontent.com/assets/4Bdjj2NXSOa3V5aPSVieDrJC9bk.mp4'
                     className='object-cover cursor-auto bg-black border-[#a2a5eb] border-2 rounded-xl'></video>
                 </div>
-                <div className='flex bg-white flex-col items-center justify-center rounded-lg border-[]'></div>
+                <div className='flex bg-white flex-col items-center justify-center rounded-lg border-[#ffffff0f]'></div>
               </div>
               <Card className='flex fle-col items-center justify-center bg-[#d9d9d908] border-[#ffffff0f] rounded-3xl p-4 '>
                 <div className='flex flex-col items-start justify-start'>
@@ -284,7 +284,7 @@ const ToolsPage = () => {
                 </p>
               </div>
               <div className='relative h-[56px] w-[573px] border-[#e9f0ff1a]'>
-                <div className='absolute top-0 h-[56px] border-[#55577f66] bg-[#55577f3b] rounded-lg w-[573px]'></div>
+                <div className='absolute top-0 h-[56px] border-[#55577f66] bg-[#55577f3b] rounded-3xl w-[573px]'></div>
               </div>
               <div className=' top-[51px] left-[21px] z-1'>
                 <p className='text-left text-[18px] font-[Inter] text-[#ffffff00]'>
@@ -300,6 +300,15 @@ const ToolsPage = () => {
                 </div>
                 <div className='flex items-start gap-2 border-[#e9f0ff1a] rounded-full px-3 p-2 bg-[#55577f66]'>
                   <p className='text-[14.7px] text-white'>Genrate Description</p>
+                </div>
+              </div>
+              <div className='h-[92px] w-[453px]'></div>
+              <div className='border-[#55577f80] bg-[#2e304f] h-[92px] top-0 w-[453px]'></div>
+              <div className='flex flex-col items-start justify-start left-[20px] top-[20px]'>
+                <div className='relative flex flex-col bg-[#54567e] h-[12px] w-[492px] opacity-1 '></div>
+                <div className='flex flex-col items-start justify-start gap-2 border-[#e9f0ff1a]'>
+                  <div className='bg-[#54567e] h-[12px] w-[351px] border-[#e9f0ff1a] rounded-lg'></div>
+                  <div className='h-[12px] w-[271px] bg-[#54567e]'></div>
                 </div>
               </div>
 
