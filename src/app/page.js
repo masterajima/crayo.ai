@@ -3,6 +3,7 @@ import { Container } from '../components/ui/containers';
 import WorkCrayo from '@/components/ui/home/work';
 import FeaturesPage from '@/components/ui/home/features';
 import ToolsPage from '@/components/ui/home/tools';
+import FunctionPage from '@/components/ui/home/function';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <WorkCrayo />
       <FeaturesPage />
       <ToolsPage></ToolsPage>
+      <FunctionPage></FunctionPage>
     </div>
   );
 };
