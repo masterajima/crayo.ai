@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/shadcn/ui/button';
 import Features from '@/components/feature-list';
 import VideoSection from '@/components/video-list';
+import { IconVideo, IconMusic } from 'lucide-react';
 
 const ToolsPage = () => {
   return (
@@ -14,7 +15,7 @@ const ToolsPage = () => {
           <Button
             href='/'
             label='Features'
-            icon={<iconMusic></iconMusic>}
+            icon={<IconMusic></IconMusic>}
           />
           <div className=' gap-4 flex flex-col items-center mt-8'>
             <h2 className='md:w-[350px] lg:w-[60%] text-[35px] font-semibold text-white'>
@@ -40,16 +41,16 @@ const ToolsPage = () => {
             <Card className='flex  items-center justify-center rounded-3xl bg-[#ffffff0f] border-[#e9f0ff1a] lg:h-[540px]  w-full  p-18 lg:mt-8 gap-6 mb-8 px-8'>
               <div className='flex flex-col items-start'>
                 <Features
-                  icon={<iconMusic></iconMusic>}
+                  icon={<IconMusic></IconMusic>}
                   label='Popular Music'></Features>
                 <Features
-                  icon={<iconVideo></iconVideo>}
+                  icon={<IconVideo></IconVideo>}
                   label='Voice Narrator'></Features>
                 <Features
-                  icon={iconVideo}
+                  icon={IconVideo}
                   label='Background Video'></Features>
                 <Features
-                  icon={iconVideo}
+                  icon={IconVideo}
                   label='AI Image Genration'></Features>
               </div>
             </Card>
