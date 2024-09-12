@@ -10,18 +10,20 @@ const FunctionPage = () => {
         <p className='text-[16px] font-[Inter] text-[#000d49]'>How it Works</p>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
       </div>
-      <div className='flex flex-col lg:items-start lg:justify-start  w-1/2'>
-        <h2 className='text-5xl font-semibold text-[#000d49]'>
-          Ultimate tool for Social Media growth
+      <div className='flex flex-col items-start justify-start  w-1/2'>
+        <h2 className='text-5xl font-semibold text-[#000d49] text-start'>
+          Ultimate ⭐ tool for Social Media growth
         </h2>
-        <p className='text-[15px] font-[Inter] text-[#000D49B3]'>
-          Create unlimited shorts videos at once. Auto generate captions, effects,
-          background and music.
-        </p>
+        <div className='flex flex-col items-start justify-start  mt-4'>
+          <p className='text-lg  text-[#000D49B3] w-2/3'>
+            Create unlimited shorts videos at once. Auto generate captions, effects,
+            background and music.
+          </p>
+        </div>
       </div>
-      <div className='flex flex-col items-start gap-5'>
-        <div className='flex flex-col items-stretch'>
-          <div className='flex items-center gap-3'>
+      <div className='flex flex-col items-end justify-end gap-5'>
+        <div className='flex flex-col items-end'>
+          <div className='flex items-end justify-end gap-3'>
             <Link
               href='https://crayo.ai/dashboard'
               className='bg-[#dde6ff] flex items-center gap-2 p-2 rounded-3xl px-6'>
@@ -45,7 +47,7 @@ const FunctionPage = () => {
             </Link>
           </div>
         </div>
-        <div className='flex items-center justify-center gap-2'>
+        <div className='flex items-end justify-end gap-2'>
           <div className='w-[16px] h-[17px] mx-auto'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -74,32 +76,30 @@ const FunctionPage = () => {
         </div>
       </div>
       <div className='flex  items-start justify-start lg:p-6 gap-8 '>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 '>
-          <div className='relative flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
-            <div className='absolute right-25 top-25 z-1 w-[189px]'>
-              <div className='absolute inset-0 border-[#e9f0ff]'>
-                <Image
-                  src='/assets/images/insta.avif'
-                  alt='insta'
-                  width={189}
-                  height={189}
-                  className='object-cover object-top-right'
-                />
-              </div>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+          <div className=' flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
+            <div className='absolute  top-0 right-0'>
+              <Image
+                src='/assets/images/insta.avif'
+                alt='insta'
+                width={189}
+                height={189}
+                className='object-cover object-top-right'
+              />
             </div>
           </div>
 
-          <div className='flex flex-col items-start gap-4'>
+          <div className='flex flex-col items-start justify-strat gap-4 mt-[200px]'>
             <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
 
-            <p className='text-[15px] text-[#000d4980] w-[378px]'>
+            <p className='text-[15px] text-[#000d4980] w-2/3'>
               Turn Instagram reels into exciting conetent by adding gameplay to keep
               viewers entertained.{' '}
             </p>
           </div>
         </Card>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 '>
-          <div className=' top-0 right-0  border-[#e9f0ff]'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+          <div className=' top-0 right-0 absolute'>
             <Image
               src='/assets/images/tiktok.avif'
               alt='insta'
@@ -109,17 +109,17 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-[Inter]'>Instagram Reels</h3>
+          <div className='flex flex-col items-start gap-4 mt-[200px]'>
+            <h3 className='text-[#000d49] text-[17px] font-bold'>TikTok Videos</h3>
 
-            <p className='text-[15px] text-[#000d4980] w-[378px]'>
-              Turn Instagram reels into exciting conetent by adding gameplay to keep
-              viewers entertained.{' '}
+            <p className='text-[15px] text-[#000d4980] w-2/3'>
+              Use AI to make money from the CPB program by creating entertaining content
+              using Crayo.
             </p>
           </div>
         </Card>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 '>
-          <div className=' top-0 right-0  border-[#e9f0ff]'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+          <div className=' top-0 right-0  absolute'>
             <Image
               src='/assets/images/cam.avif'
               alt='insta'
@@ -129,13 +129,76 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-[Inter]'>Instagram Reels</h3>
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
+            <h3 className='text-[#000d49] text-[17px] font-bold'>Faceless Content</h3>
 
-            <p className='text-[15px] text-[#000d4980] w-[378px]'>
-              Turn Instagram reels into exciting conetent by adding gameplay to keep
-              viewers entertained.{' '}
+            <p className='text-[15px] text-[#000d4980] w-2/3'>
+              Create a video using just a script and create captivating content.
             </p>
+          </div>
+        </Card>
+      </div>
+      <div className='flex items-start justify-start gap-8'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative '>
+          <div className='absolute top-0 right-0 '>
+            <Image
+              src='/assets/images/reddit.avif'
+              alt='insta'
+              width={189}
+              height={189}
+              className='object-cover object-top-right'
+            />
+          </div>
+
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
+            <h3 className='text-[#000d49] text-[17px] font-bold'>Reddit Stories</h3>
+
+            <p className='text-[15px] text-[#000d4980] w-2/3'>
+              Use AI to take a Reddit story and turn it into an AI generated video.
+            </p>
+          </div>
+        </Card>
+        <Card className='flex flex-col bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+          <div className='absolute top-0 right-0'>
+            <Image
+              src='/assets/images/youtube.avif'
+              alt='insta'
+              width={189}
+              height={189}
+              className='object-cover object-top-right'
+            />
+          </div>
+
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
+            <h3 className='text-[#000d49] text-[17px] font-bold'>YouTube Shorts</h3>
+
+            <p className='text-[15px] text-[#000d4980] w-2/3'>
+              Turn Instagram reels into exciting content by adding gameplay to keep
+              viewers entertained.
+            </p>
+          </div>
+        </Card>
+
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+          <div className='flex flex-col items-center justify-center'>
+            <div className='absolute top-0 right-0'>
+              <Image
+                src='/assets/images/notes.avif'
+                alt='insta'
+                width={189}
+                height={189}
+                className='object-cover object-top-right'
+              />
+            </div>
+
+            <div className='flex flex-col items-start justify-start mt-[200px] gap-4 '>
+              <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
+
+              <p className='text-[15px] text-[#000d4980] w-2/3'>
+                Turn Instagram reels into exciting content by adding gameplay to keep
+                viewers entertained.
+              </p>
+            </div>
           </div>
         </Card>
       </div>
