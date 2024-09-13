@@ -4,6 +4,7 @@ import WorkCrayo from '@/components/ui/home/work';
 import FeaturesPage from '@/components/ui/home/features';
 import ToolsPage from '@/components/ui/home/tools';
 import FunctionPage from '@/components/ui/home/function';
+import TestimonialPage from '@/components/ui/home/testimonial';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <FeaturesPage />
       <ToolsPage></ToolsPage>
       <FunctionPage></FunctionPage>
+      <TestimonialPage></TestimonialPage>
     </div>
   );
 };
