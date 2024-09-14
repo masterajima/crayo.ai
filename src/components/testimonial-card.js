@@ -16,7 +16,7 @@ const TestimonialCard = ({ imageSrc, name, role, content }) => {
           />
           <div>
             <h3 className='text-[17px] font-semibold text-[#000D49]'>{name}</h3>
-            <p className='text-[15px] text-[#000d4980]'>{role}</p>
+            <p className='text-[15px] text-start text-[#000d4980]'>{role}</p>
           </div>
         </div>
         <p className='text-[#000D4980] text-base flex-grow'>{content}</p>
