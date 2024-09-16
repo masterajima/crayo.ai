@@ -5,6 +5,7 @@ import FeaturesPage from '@/components/ui/home/features';
 import ToolsPage from '@/components/ui/home/tools';
 import FunctionPage from '@/components/ui/home/function';
 import TestimonialPage from '@/components/ui/home/testimonial';
+import ExperiencePage from '@/components/ui/home/experience';
 
 const Home = () => {
   const testimonialData = {
@@ -63,6 +64,7 @@ const Home = () => {
       <ToolsPage></ToolsPage>
       <FunctionPage></FunctionPage>
       <TestimonialPage {...testimonialData} />
+      <ExperiencePage></ExperiencePage>
     </div>
   );
 };

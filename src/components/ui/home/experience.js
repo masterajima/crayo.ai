@@ -1,0 +1,133 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const ExperiencePage = () => {
+  return (
+    <div className='relative w-full h-screen'>
+      <div className='absolute inset-0'>
+        <Image
+          src='/assets/images/mom.avif'
+          alt='mom'
+          layout='fill'
+          objectFit='cover'
+          quality={100}
+        />
+      </div>
+      <div className='relative z-10 flex flex-col items-start justify-start h-full text-[#000D49] mt-8 p-8 px-18'>
+        <div className='flex items-center gap-4 justify-center p-2 border-2 rounded-full px-6 border-[#ffffff66] bg-[#ffffff66] mb-8'>
+          <div className='rounded-full w-[3px] h-[3px] bg-[#000d49]'></div>
+          <p>How It Works</p>
+          <div className='rounded-full w-[3px] h-[3px] bg-[#000d49]'></div>
+        </div>
+
+        <div className='flex flex-col items-start justify-start text-start max-w-2xl '>
+          <h2 className='text-[40px] font-semibold mb-4'>Experience Crayo ⚡for free</h2>
+          <p className='text-lg'>
+            Crayo - your gateway to creating viral TikTok clips in seconds! Auto-generate
+            captions, effects, background, and music for you.
+          </p>
+        </div>
+        <div className='flex items-center justify-center gap-2 mt-8'>
+          <Link
+            href='https://crayo.ai/dashboard'
+            className='flex items-center justify-center gap-2 p-2 rounded-full border-[#ffffff66] px-6 bg-white text-[#000d49]'>
+            <div className='w-[26px] h-[26px] rounded-full bg-[#cfd5fb]'>
+              <div className='flex flex-col items-center justify-center'>
+                <svg
+                  overflow='visible'
+                  width='11'
+                  height='11'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'>
+                  {' '}
+                  <path
+                    stroke-linejoin='miter'
+                    stroke='var(--token-9d8c7f4b-b2a9-4034-9daa-4796a213ec8e, rgb(0, 13, 73))'
+                    d='M13.5 5L20.5 12L13.5 19M3.5 12L20 12'
+                    stroke-width='2'></path>{' '}
+                </svg>
+              </div>
+            </div>
+            <p className='text-[#000d49]'>Try Now</p>
+          </Link>
+        </div>
+        <div className='flex items-start justify-start  w-[779px] mt-8'>
+          <div className='flex items-center  justify-center gap-2 p-2 px-5 border-[#ffffff33] bg-[#ffffff4d] rounded-full'>
+            <p className='text-[#000d49] text-sm'>AI Voice</p>
+          </div>
+          <div className='h-[11px] w-[11px] text-white'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 173 11'
+              preserveAspectRatio='none'
+              style={{ width: '11', height: '11' }}>
+              <path
+                d='M86.5 0 L173 5.5 L86.5 11 L0 5.5 Z'
+                fill='white'
+              />
+            </svg>
+          </div>
+          <div className='flex items-center  justify-center gap-2 p-2 px-8 border-[#ffffff33] bg-[#ffffff4d] rounded-full'>
+            <p className='text-[#000d49] text-sm'>AI Background</p>
+          </div>
+          <div className='h-[11px] w-[11px] text-white'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 173 11'
+              preserveAspectRatio='none'
+              style={{ width: '11', height: '11' }}>
+              <path
+                d='M86.5 0 L173 5.5 L86.5 11 L0 5.5 Z'
+                fill='white'
+              />
+            </svg>
+          </div>
+          <div className='flex items-center  justify-center gap-2 p-2 px-8 border-[#ffffff33] bg-[#ffffff4d] rounded-full'>
+            <p className='text-[#000d49] text-sm'>AI Script Genrator</p>
+          </div>
+
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 173 11'
+            preserveAspectRatio='none'
+            style={{ width: '11', height: '11' }}>
+            <path
+              d='M86.5 0 L173 5.5 L86.5 11 L0 5.5 Z'
+              fill='white'
+            />
+          </svg>
+        </div>
+        <div className='flex  items-start justify-start w-full gap-10 bg-[#ffffff2e] backdrop:blur p-10 mt-10'>
+          <div className='flex items-start justify-start gap-2'>
+            <p className='text-[20px] text-[#000d49] font-bold'>Navigation</p>
+          </div>
+          <div className='flex items-start justify-start gap-2'>
+            <Link
+              href='https://crayo.ai/pricing'
+              className='flex items-center justify-center p-2 gap-2 rounded-full px-6 bg-[#ffffff66] border-[#ffffff66]'>
+              <p className='text-[#000d49]'>pricing</p>
+            </Link>
+          </div>
+          <div className='flex items-start justify-start '>
+            <Link
+              href='https://crayo.ai/blog'
+              className='flex items-center justify-center p-2 gap-2 rounded-full px-6 bg-[#ffffff66] border-[#ffffff66]'>
+              <p className='text-[#000d49]'>Insights</p>
+            </Link>
+          </div>
+          <div className='flex items-start justify-start gap-2'>
+            <Link
+              href='https://crayo.ai/blog'
+              className='flex items-center justify-center p-2 gap-2 rounded-full px-6 bg-[#ffffff66] border-[#ffffff66]'>
+              <p className='text-[#000d49]'>Affiliates</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ExperiencePage;
