@@ -2,17 +2,18 @@ import { Container } from '@/components/ui/containers';
 import Link from 'next/link';
 import NavMenu from './menu';
 import Image from 'next/image';
+import NavItem from '../navitem';
 
 const Navbar = ({ logo, menuItems = [], showMenu = true }) => {
   return (
-    <nav className='py-4 border-b-2'>
+    <nav className='py-2 border-b-4'>
       <div className='flex flex-col px-6 '>
         <div className='hidden sm:hidden md:hidden lg:block'>
-          <div className='bg-blue-300 bg-opacity-90 w-full rounded-full backdrop-blur-lg '>
+          <div className='bg-blue-100 bg-opacity-90 w-full rounded-full backdrop-blur-lg '>
             <div className='flex items-start justify-between p-2'>
               <Link
                 href='/'
-                className='w-30 h-7 block'>
+                className='w-20 h-7 block p-3'>
                 {logo}
               </Link>
               <div className='flex items-start space-x-2'>
