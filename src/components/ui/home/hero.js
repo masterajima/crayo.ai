@@ -4,83 +4,105 @@ import { Card } from '@/shadcn/ui/card';
 import { Container } from '../containers';
 import { Button } from '@/shadcn/ui/button';
 import Link from 'next/link';
+import Navbar from '@/components/layout/navbar';
+import LogoPage from '@/components/logopage';
 
 const Hero = () => {
+  const menuItems = [
+    { href: '/pricing', label: 'Pricing' },
+    { href: '/blog', label: 'Insight' },
+    { href: 'https://crayo.tolt.io/login', label: 'Affiliate' },
+    { href: '/guide', label: 'Guide' },
+  ];
   return (
-    <div className='flex flex-col items-start justify-start w-full p-18 '>
-      <Card className='flex flex-col items-start justify-start p-18 rounded-3xl bg-white  bg-cover w-full'>
+    <div className='flex flex-col lg:items-start items-center lg:justify-start justify-center w-full p-4 lg:p-18 '>
+      <Card className='flex flex-col items-center justify-center  lg:items-start lg:justify-start lg:p-18 rounded-3xl bg-white  bg-cover p-4 lg:w-full'>
         <div
-          className='relative bg-cover  w-full'
+          className='relative bg-cover h-full  w-full'
           style={{
             backgroundImage:
               "url('https://framerusercontent.com/images/J9YwsU9nugMP4hdHntRplOALTI.png')",
           }}>
-          <div className='container mx-auto px-4 py-16'>
-            <div className='max-w-3xl mx-auto text-center'>
-              <div className='inline-flex items-center bg-white bg-opacity-40 rounded-full px-4 py-2 mb-6'>
+          <Navbar
+            logo={<LogoPage></LogoPage>}
+            menuItems={menuItems}
+            showMenu={true}
+          />
+          <div className='container items-center justify-center lg:items-start lg:justify-start px-4 lg:py-16'>
+            <div className='max-w-3xl sm:mx-auto sm:text-center lg:text-start'>
+              <div className='inline-flex items-center bg-white bg-opacity-40 rounded-full lg:px-4 lg:py-2 p-2 mb-6'>
                 <div className='w-2 h-2 bg-[#000D49] rounded-full mr-2'></div>
-                <p className='text-[#000D49] text-sm font-medium'>
+                <p className='text-[#000D49] lg:text-sm text-xs lg:font-medium lg:text-start'>
                   Experience Creative Freedom
                 </p>
                 <div className='w-2 h-2 bg-[#000D49] rounded-full ml-2'></div>
               </div>
-              <h1 className='text-4xl md:text-5xl  text-blue-900 font-semibold mb-4 text-center'>
-                The fastest way to create Short Videos
-              </h1>
-              <p className='text-lg mb-8 text-center'>
-                Create unlimited short videos at once. Auto generate captions, effects,
-                background & music.
-              </p>
-              <div className='flex  sm:flex-row justify-center gap-4  space-y-4 sm:space-y-2 sm:space-x-2 px-4 '>
-                <Link
-                  href='https://crayo.ai/dashboard'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='inline-flex items-center bg-white text-[#000D49] font-semibold px-8 py-1 rounded-full hover:bg-opacity-90 transition duration-300'>
-                  <span className='mr-2 p-1'>Try now</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      d='M9 5l7 7-7 7'></path>
-                  </svg>
-                </Link>
-                <Link
-                  href='#learn-more'
-                  className='inline-flex items-center bg-white bg-opacity-40 text-[#000D49] font-semibold px-6 py-3 rounded-full hover:bg-opacity-50 transition duration-300'>
-                  <span className='mr-2'>Learn More</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      d='M9 5l7 7-7 7'></path>
-                  </svg>
-                </Link>
-              </div>
-              <div className='relative flex items-start justify-start w-full overflow-hidden gap-4 mt-4'>
-                <div className='flex-1 h-[98px] overflow-visible relative w-[300px]'>
-                  <div className='block absolute inset-0'>
-                    <Image
-                      src='/assets/images/genrate.avif'
-                      alt='genrate'
-                      layout='fill'
-                      className='object-cover object-center w-full h-full'
-                      priority='true'
-                    />
-                  </div>
+              <div className='flex flex-col items-center lg:items-start lg:justify-start justify-center lg:w-2/3'>
+                <h1
+                  className='lg:text-5xl text-[35px] text-[#000d49] font-semibold mb-4 text-center lg:text-start  
+                 '>
+                  The fastest way to genrate Short Videos
+                </h1>
+                <p className='lg:text-lg text-sm mb-8 text-center lg:text-start'>
+                  Create unlimited short videos at once. Auto generate captions, effects,
+                  background & music.
+                </p>
+                <div className='flex  sm:flex-row justify-center gap-4 px-4 '>
+                  <Link
+                    href='https://crayo.ai/dashboard'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-flex items-center bg-white text-[#000D49] font-semibold px-3 py-2 gap-2 rounded-full hover:bg-opacity-90 transition duration-300'>
+                    <div className='bg-[#AFDAFA] w-[24px] h-[24px] flex items-center rounded-full'>
+                      <svg
+                        overflow='visible'
+                        width='16'
+                        height='16'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'>
+                        {' '}
+                        <path
+                          stroke-linejoin='miter'
+                          stroke='var(--token-9d8c7f4b-b2a9-4034-9daa-4796a213ec8e, rgb(0, 13, 73))'
+                          d='M13.5 5L20.5 12L13.5 19M3.5 12L20 12'
+                          stroke-width='2'></path>{' '}
+                      </svg>
+                    </div>
+                    <span className='mr-2 '>Try now</span>
+                  </Link>
+                  <Link
+                    href='#learn-more'
+                    className='inline-flex items-center bg-white bg-opacity-40 text-[#000D49] font-semibold px-3 gap-2 py-3 rounded-full hover:bg-opacity-50 transition duration-300'>
+                    <div className='bg-white w-[24px] h-[24px] flex items-center rounded-full'>
+                      <svg
+                        overflow='visible'
+                        width='16'
+                        height='16'
+                        viewBox='0 0 24 24'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'>
+                        {' '}
+                        <path
+                          stroke-linejoin='miter'
+                          stroke='var(--token-9d8c7f4b-b2a9-4034-9daa-4796a213ec8e, rgb(0, 13, 73))'
+                          d='M13.5 5L20.5 12L13.5 19M3.5 12L20 12'
+                          stroke-width='2'></path>{' '}
+                      </svg>
+                    </div>
+                    <span className='mr-2'>Learn More</span>
+                  </Link>
                 </div>
+              </div>
+
+              <div className=' flex items-start justify-start w-full  gap-4 mt-16'>
+                <Image
+                  src='/assets/images/genrate.avif'
+                  alt='genrate'
+                  width={3474}
+                  height={122}
+                  className=' w-full h-full object-cover object-center'
+                />
               </div>
             </div>
           </div>

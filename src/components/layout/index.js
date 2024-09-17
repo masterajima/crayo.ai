@@ -12,11 +12,7 @@ const Layout = ({ children }) => {
   ];
   return (
     <>
-      <Navbar
-        logo={<LogoPage></LogoPage>}
-        menuItems={menuItems}
-        showMenu={true}
-      />
+     
       <Main>{children}</Main>
       <Footer />
     </>

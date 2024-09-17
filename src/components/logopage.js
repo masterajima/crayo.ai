@@ -5,7 +5,7 @@ const LogoPage = ({}) => {
   return (
     <Link
       href='/'
-      className='w-15 h-3 block'>
+      className='w-40 h-3 block'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 120 28'>
