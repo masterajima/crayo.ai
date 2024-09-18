@@ -39,11 +39,11 @@ const Hero = () => {
               </div>
               <div className='flex flex-col items-center lg:items-start lg:justify-start justify-center '>
                 <h1
-                  className='lg:text-5xl text-3xl text-[#000d49] font-semibold mb-4 text-center lg:text-start  
+                  className='lg:text-5xl text-3xl text-[#000d49] font-semibold mb-4 text-center lg:w-2/3 lg:text-start  
                  '>
                   The fastest way to create Short Videos
                 </h1>
-                <p className='lg:text-lg text-sm mb-8 text-[#000D49B3] text-center lg:text-start'>
+                <p className='lg:text-lg text-sm mb-8 text-[#000D49B3] text-center lg:text-start lg:w-2/3'>
                   Create unlimited short videos at once. Auto generate captions, effects,
                   background & music.
                 </p>
