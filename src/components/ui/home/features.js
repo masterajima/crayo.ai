@@ -11,24 +11,28 @@ const FeaturesPage = () => {
   const storyTopics = ['Clockwork Detective', 'Garden of Whispers', 'Mystory Manor'];
   const storyTone = ['Funny', 'Mystory', 'Horror'];
   return (
-    <div className='flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start lg:p-12 md:p-8  w-full'>
-      <CardComponent className='md:w-[30%]'>
+    <div className='flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start lg:p-12 md:p-8  w-full mt-8'>
+      <CardComponent className='md:w-[30%] pt-8'>
         <div className='flex flex-col w-full h-[480px] lg:items-start px-4'>
           <div className='flex flex-col items-start justify-start  gap-4 lg:px-3 '>
-            <p className='lg:text-[11.6px] text-sm font-semibold text-start text-[#000d49] w-full'>
+            <p className='lg:text-[11.6px] lg:text-sm text-xs font-semibold text-start text-[#000d49] w-full'>
               Enter your story topic
             </p>
 
             <StoryTopicInput topics={storyTopics} />
             <div className='flex items-start justify-start gap-2 '>
-              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
-                <p className='text-[#000D49] text-xs'>Clockwork Detective</p>
+              <div className='flex items-center rounded-full lg:p-1 border-[#e9f0ff] px-6 bg-blue-100 '>
+                <p className='text-[#000D49] lg:text-xs text-[9.5px]'>
+                  Clockwork Detective
+                </p>
               </div>
-              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
-                <p className='text-[#000D49] text-xs'>Garden of Whispers</p>
+              <div className='flex items-center rounded-full lg:p-1 border-[#e9f0ff] px-6 bg-blue-100 '>
+                <p className='text-[#000D49] lg:text-xs text-[9.5px]'>Garden Whispers</p>
               </div>
-              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
-                <p className='text-[#000D49] text-xs'>Journey of Avion</p>
+              <div className='flex items-center rounded-full lg:p-1 border-[#e9f0ff] px-6 bg-blue-100 '>
+                <p className='text-[#000D49] lg:text-xs text-[9.5px]'>
+                  Journey of Avion
+                </p>
               </div>
             </div>
             <div className='flex flex-col items-start justify-start'>
@@ -123,7 +127,7 @@ const FeaturesPage = () => {
                   Write and Outline
                 </h3>
                 <div className='flex flex-col items-start justify-start'>
-                  <p className='text-[15px] text-[#000d49] w-2/3 text-sm text-start'>
+                  <p className='text-[15px] text-[#000d49b0] w-2/3 lg:text-sm text-xs text-start'>
                     Start with writing script using a prompt or using template
                     suggestions.
                   </p>
