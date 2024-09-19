@@ -31,7 +31,7 @@ const WorkCrayo = () => {
       <div className='flex items-start justify-start mt-8 px-8'>
         <Link
           href='https://discord.gg/crayo'
-          className='bg-[#dde6ff] lg:p-2 px-6 lg:py-2 flex gap-8 rounded-full'>
+          className='bg-[#dde6ff] lg:p-2 px-6 py-2 flex gap-2 rounded-full'>
           <div className=' w-[20px] h-[20px] bg-white rounded-full flex z-2'>
             <div className='flex  items-center justify-center z-2'>
               <div className='w-[16px] h-[16px] z-1'>

@@ -11,37 +11,123 @@ const FeaturesPage = () => {
   const storyTopics = ['Clockwork Detective', 'Garden of Whispers', 'Mystory Manor'];
   const storyTone = ['Funny', 'Mystory', 'Horror'];
   return (
-    <div className='flex flex-col lg:flex-row gap-4 items-center md:items-start justify-center md:justify-start lg:p-12 md:p-8  w-full'>
+    <div className='flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start lg:p-12 md:p-8  w-full'>
       <CardComponent className='md:w-[30%]'>
-        <div className='flex flex-col w-full h-[480px] lg:items-start '>
-          <div className='flex flex-col items-start justify-start  gap-4 lg:px-3 mt-6'>
-            <p className='lg:text-[11.6px] text-sm font-semibold  text-[#000d49] w-full'>
+        <div className='flex flex-col w-full h-[480px] lg:items-start px-4'>
+          <div className='flex flex-col items-start justify-start  gap-4 lg:px-3 '>
+            <p className='lg:text-[11.6px] text-sm font-semibold text-start text-[#000d49] w-full'>
               Enter your story topic
             </p>
+
             <StoryTopicInput topics={storyTopics} />
+            <div className='flex items-start justify-start gap-2 '>
+              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
+                <p className='text-[#000D49] text-xs'>Clockwork Detective</p>
+              </div>
+              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
+                <p className='text-[#000D49] text-xs'>Garden of Whispers</p>
+              </div>
+              <div className='flex items-center rounded-full p-1 border-[#e9f0ff] bg-blue-100 '>
+                <p className='text-[#000D49] text-xs'>Journey of Avion</p>
+              </div>
+            </div>
             <div className='flex flex-col items-start justify-start'>
               <div className='flex p-2 border-[#e9f0ff] '>
                 <div className='flex flex-col'>
-                  <p className='text-[#000d49] font-normal text-[11.6px]'>
+                  <p className='text-[#000d49] font-normal text-start text-[11.6px]'>
                     Select Story Tone
                   </p>
+                  <div className='h-[37px] w-[378px] border-[#e1ebff] bg-white'>
+                    <div className='h-[37px] w-[378px] border-[#e1ebff] bg-white rounded-full'>
+                      <div className='flex items-start justify-start gap-2'>
+                        <div className='flex items-center rounded-lg bg-[#e4eeff] border-[#e9f0ff] gap-2 p-2 '>
+                          <p className='text-[#000d49] text-[9.7px]'>Funny</p>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            class='icon icon-tabler icon-tabler-circle-x'
+                            width='11'
+                            height='11'
+                            viewBox='0 0 24 24'
+                            stroke-width='1.5'
+                            stroke='#2c3e50'
+                            fill='none'
+                            stroke-linecap='round'
+                            stroke-linejoin='round'>
+                            <path
+                              stroke='none'
+                              d='M0 0h24v24H0z'
+                              fill='none'
+                            />
+                            <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
+                            <path d='M10 10l4 4m0 -4l-4 4' />
+                          </svg>
+                        </div>
+                        <div className='flex items-center rounded-lg bg-[#e4eeff] border-[#e9f0ff] gap-2 p-2 '>
+                          <p className='text-[#000d49] text-[9.7px]'>Mystry</p>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            class='icon icon-tabler icon-tabler-circle-x'
+                            width='11'
+                            height='11'
+                            viewBox='0 0 24 24'
+                            stroke-width='1.5'
+                            stroke='#2c3e50'
+                            fill='none'
+                            stroke-linecap='round'
+                            stroke-linejoin='round'>
+                            <path
+                              stroke='none'
+                              d='M0 0h24v24H0z'
+                              fill='none'
+                            />
+                            <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
+                            <path d='M10 10l4 4m0 -4l-4 4' />
+                          </svg>
+                        </div>
+                        <div className='flex items-center rounded-lg bg-[#e4eeff] border-[#e9f0ff] gap-2 p-2 '>
+                          <p className='text-[#000d49] text-[9.7px]'>Horror</p>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            class='icon icon-tabler icon-tabler-circle-x'
+                            width='11'
+                            height='11'
+                            viewBox='0 0 24 24'
+                            stroke-width='1.5'
+                            stroke='#2c3e50'
+                            fill='none'
+                            stroke-linecap='round'
+                            stroke-linejoin='round'>
+                            <path
+                              stroke='none'
+                              d='M0 0h24v24H0z'
+                              fill='none'
+                            />
+                            <path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' />
+                            <path d='M10 10l4 4m0 -4l-4 4' />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <StoryTone tones={storyTone} />
               <div className='flex flex-col items-start mt-6'>
                 <p className='text-[#000d49] text-[11.6px]'>Max Words</p>
               </div>
               <MaxWordAInput />
               <GenrateScript />
-              <div className='flex flex-col items-start justify-start'>
+              <div className='flex flex-col items-start justify-start mt-4'>
                 <p className='text-[18px] text-[#000d49]'>1-</p>
                 <h3 className='text-[#000d49] text-[17px] font-bold'>
                   Write and Outline
                 </h3>
-                <p className='text-[15px] text-[#000d49] w-1/2 text-sm text-start'>
-                  Start with writing script using a prompt or using template suggestions.
-                </p>
+                <div className='flex flex-col items-start justify-start'>
+                  <p className='text-[15px] text-[#000d49] w-2/3 text-sm text-start'>
+                    Start with writing script using a prompt or using template
+                    suggestions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
