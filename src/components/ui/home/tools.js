@@ -47,7 +47,42 @@ const ToolsPage = () => {
             </Button>
           </div>
         </div>
-        <div className='absolute top-[-3%] left-[34%] md:top-[-1%] md:left-[-40%] z-10 max-w-[160px] space-y-2 rounded-xl bg-white items-start cursor-pointer'></div>
+        <div className='absolute top-[-3%] left-[34%] md:top-[-1%] md:left-[-40%] z-10 max-w-[160px] space-y-2 rounded-xl bg-white items-start cursor-pointer p-2.5 text-start shadow-[o_13px_22px(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:rounded-3xl md:p-5'>
+          <div className='relative aspect-[260/137] w-full'>
+            <Image
+              src='/assets/images/fake-text.png'
+              alt='fake '
+              width={300}
+              height={300}
+              className='rounded-xl border border-slate-200 object-cover'
+            />
+          </div>
+          <div className='flex w-full items-center justify-between space-x-2 md:space-x-4'>
+            <h6 className='max-w-[125px] font-bold text-[14px] leading-[110%] md:max-w-none'>
+              Fake Texts video
+            </h6>
+            <Button className='rounded-full  bg-[#4D7FED]/10 p-2 transition-all duration-200 hover:opacity-70'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                alt='plus'
+                width={8}
+                height={8}
+                className='transition-transform'
+              />
+            </Button>
+          </div>
+        </div>
+        <div className='absolute top-[13%] right-[5%] md:right-[15%] md:top-[8%] z-10 max-w-[160px] space-y-2 cursor-pointer items-start rounded-xl bg-white p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className='relative w-full aspect-[260/137]'>
+            <Image
+              src='/assets/images/avatar.png'
+              alt='avtar'
+              width={300}
+              height={300}
+              className='object-cover rounded-xl border border-slate-200'
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
