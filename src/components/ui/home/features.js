@@ -258,9 +258,9 @@ const FeaturesPage = () => {
           </div>
         </div>
       </CardComponent>
-      <CardComponent className=' w-[30%]'>
-        <div className='flex flex-col items-center justify-center  gap-4 border-[#e9f0ff] bg-[#f9fbff] h-[480px]'>
-          <div className='left-[50px] w-[122px] top-[90px] z-2 flex flex-col relative items-center justify-center '>
+      <CardComponent className=' w-full'>
+        <div className='flex flex-col items-center justify-center  gap-4 border-[#e9f0ff] bg-[#f9fbff] lg:h-[480px] px-6'>
+          <div className='left-[50px] w-[122px] top-[90px] z-2 flex flex-col relative items-center justify-center mx-auto '>
             <Image
               src='/assets/images/current.avif'
               alt='white'
@@ -269,13 +269,14 @@ const FeaturesPage = () => {
             />
           </div>
           <div className='flex flex-col items-center justify-center h-[200px] relative z-1 top-[2px] left-[50px] right-[-50px]'>
-            <div className='w-[268px] h-[252px] flex items-center absolute'>
-              <div className='w-[786px] h-[300px] relative'>
+            <div className='w-[268px] h-[300px] flex items-center mx-auto absolute'>
+              <div className='w-[786px] h-[300px] relative '>
                 <Image
                   src='/assets/images/whitecircle.svg'
                   alt=''
                   width={400}
-                  height={200}></Image>
+                  height={200}
+                  className='object-cover object-center'></Image>
               </div>
             </div>
           </div>
@@ -287,7 +288,7 @@ const FeaturesPage = () => {
             <p className='text-[18px] text-[#000d49]'>3-</p>
             <h3 className='text-[#000d49] text-[17px] font-bold'>Finish&Export</h3>
 
-            <div className=''>
+            <div className='flex flex-col items-start justify-start '>
               <p className='text-[15px] text-[#000d4980]'>
                 Choose export format and download generated videos, script or narration.
               </p>
