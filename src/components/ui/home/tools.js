@@ -147,10 +147,10 @@ const ToolsPage = () => {
             </Button>
           </div>
         </div>
-        <div className='p-18 align-center h-[350px] w-[350px] items-center justify-center flex rounded-full md:h-[750px] bg-[#4D7FED]/5'>
+        <div className='md:p-18 align-center h-[350px] w-[350px] items-center justify-center flex rounded-full md:h-[750px] bg-[#4D7FED]/5'>
           <div className='md:p-18 flex h-[275px] w-[275px] justify-center rounded-full p-4 md:h-[600px] md:w-[600px]  bg-[#4D7FED]/5'>
             <div className='text-[21px] font-bold md:text-[32px]'>
-              <span className='relative inline-block'>
+              <span className='inline-block'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 100 100'>
