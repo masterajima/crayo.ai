@@ -7,7 +7,7 @@ import { Button } from '@/shadcn/ui/button';
 
 const ToolsPage = () => {
   return (
-    <div className='flex flex-col items-center justify-between space-y-2 bg-gradient-to-b from-[#f0f7ff] to-white w-full px-4 py-3 text-center md:space-y-12 md:px-40 md:py-16 '>
+    <div className='flex flex-col items-center justify-between space-y-2 bg-gradient-to-b from-[#f0f7ff] to-white w-full px-4 py-3 text-center md:space-y-12 md:px-40 md:py-16 mt-8 '>
       <div className='flex items-center gap-2 p-2 px-3 py-1 text-black place-items-center dark:text-white dark:bg-black bg-white bg-opacity-20 sm:px-4 rounded-full'>
         <Image
           src='/assets/images/bulb.png'
@@ -22,8 +22,8 @@ const ToolsPage = () => {
         </h3>
       </div>
       <div className='flex align-center justify-center pt-10 relative'>
-        <div className='absolute top-[7%] left-[0%] md:top-[8%] md:left-[15%] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl  md:p-5'>
-          <div className='relative aspect-[260/137]  w-full'>
+        <div className='top-[7%] left-[0%] md:top-[8%] md:left-[15%] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl  md:p-5'>
+          <div className=' aspect-[260/137]  w-full'>
             <Image
               src='/assets/images/video.png'
               alt='video'
@@ -47,8 +47,8 @@ const ToolsPage = () => {
             </Button>
           </div>
         </div>
-        <div className='absolute top-[-3%] left-[34%] md:top-[-1%] md:left-[-40%] z-10 max-w-[160px] space-y-2 rounded-xl bg-white items-start cursor-pointer p-2.5 text-start shadow-[o_13px_22px(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:rounded-3xl md:p-5'>
-          <div className='relative aspect-[260/137] w-full'>
+        <div className=' top-[-3%] left-[34%] md:top-[-1%] md:left-[-40%] z-10 max-w-[160px] space-y-2 rounded-xl bg-white items-start cursor-pointer p-2.5 text-start shadow-[o_13px_22px(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:rounded-3xl md:p-5'>
+          <div className=' aspect-[260/137] w-full'>
             <Image
               src='/assets/images/fake-text.png'
               alt='fake '
@@ -72,8 +72,8 @@ const ToolsPage = () => {
             </Button>
           </div>
         </div>
-        <div className='absolute top-[13%] right-[5%] md:right-[15%] md:top-[8%] z-10 max-w-[160px] space-y-2 cursor-pointer items-start rounded-xl bg-white p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
-          <div className='relative w-full aspect-[260/137]'>
+        <div className=' top-[13%] right-[5%] md:right-[15%] md:top-[8%] z-10 max-w-[160px] space-y-2 cursor-pointer items-start rounded-xl bg-white p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className=' w-full aspect-[260/137]'>
             <Image
               src='/assets/images/avatar.png'
               alt='avtar'
@@ -97,8 +97,8 @@ const ToolsPage = () => {
             </Button>
           </div>
         </div>
-        <div className='absolute bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] z-10 max-w-[160px] cursor-pointer items-start space-y-2 rounded-xl bg-white text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1EF] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
-          <div className='relative aspect-[260/137] w-full'>
+        <div className=' bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] z-10 max-w-[160px] cursor-pointer items-start space-y-2 rounded-xl bg-white text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1EF] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className=' aspect-[260/137] w-full'>
             <Image
               src='/assets/images/features.png'
               alt='features'
@@ -111,7 +111,7 @@ const ToolsPage = () => {
             <h6 className='font-bold text-[14px]md:text-[21px] leading-[110%]'>
               Youtube downloader
             </h6>
-            <button className='rounded-full p-2 transition-all duration-200 hover:opacity-70 bg-#4D7FED]/10'>
+            <button className='rounded-full p-2 transition-all duration-200 hover:opacity-70 bg-[#4D7FED]/10'>
               <Image
                 src='/assets/images/plusBlue.png'
                 alt='plus'
@@ -122,7 +122,31 @@ const ToolsPage = () => {
             </button>
           </div>
         </div>
-        <div className='absolute bottom-[-2%] right-[]'></div>
+        <div className=' bottom-[-2%] right-[3%] z-10 max-w-[160px] items-start space-y-2 rounded-xl bg-white p-2.5 text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:bottom-[4%] md:max-w-[275px] md:p-5 md:rounded-3xl md:space-y-5'>
+          <div className=' w-full aspect-[260/137]'>
+            <Image
+              src='/assets/images/voiceover.png'
+              alt='voiceover'
+              width={300}
+              height={300}
+              className='object-cover border border-slate-200 rounded'
+            />
+          </div>
+          <div className='flex w-full justify-between items-center space-x-2 md:space-x-4'>
+            <h6 className='font-bold text-[14px] md:text-[21px] leading-[110%]'>
+              Voiceover story
+            </h6>
+            <Button className='rounded-full p-2 transition-all hover-opacity-70  bg-[#4D7FED]/10'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                alt='plus'
+                width={8}
+                height={8}
+                className='transition-transform duration-300 rounded-full'
+              />
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );
