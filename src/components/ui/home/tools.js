@@ -22,8 +22,8 @@ const ToolsPage = () => {
         </h3>
       </div>
       <div className='flex align-center justify-center pt-10 relative'>
-        <div className=' top-[7%] left-[0%] md:top-[8%] md:left-[15%] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl  md:p-5'>
-          <div className='aspect-[260/137]  w-full'>
+        <div className='absolute top-[7%] left-[0%] md:top-[8%] md:left-[15%] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl  md:p-5'>
+          <div className='relative aspect-[260/137]  w-full'>
             <Image
               src='/assets/images/video.png'
               alt='video'
@@ -67,7 +67,7 @@ const ToolsPage = () => {
                 alt='plus'
                 width={8}
                 height={8}
-                className='transition-transform'
+                className='transition-transform rounded-full'
               />
             </Button>
           </div>
@@ -82,7 +82,47 @@ const ToolsPage = () => {
               className='object-cover rounded-xl border border-slate-200'
             />
           </div>
+          <div className='w-full flex items-center justify-between space-x-2 md:space-x-4'>
+            <h6 className='max-w-[125px] font-bold text-[14px] leading-[110%]'>
+              AI avtars
+            </h6>
+            <Button className='rounded-full p-2 bg-[#4D7FED]/10 transition-all duration-200 hover:opacity-70'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                alt='plus'
+                width={8}
+                height={8}
+                className='transition-transform duration-300 rounded-full'
+              />
+            </Button>
+          </div>
         </div>
+        <div className='absolute bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] z-10 max-w-[160px] cursor-pointer items-start space-y-2 rounded-xl bg-white text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1EF] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className='relative aspect-[260/137] w-full'>
+            <Image
+              src='/assets/images/features.png'
+              alt='features'
+              width={300}
+              height={300}
+              className='border border-slate-200 object-cover'
+            />
+          </div>
+          <div className='flex w-full items-center p-2 space-x-2 justify-between md:space-x-4'>
+            <h6 className='font-bold text-[14px]md:text-[21px] leading-[110%]'>
+              Youtube downloader
+            </h6>
+            <button className='rounded-full p-2 transition-all duration-200 hover:opacity-70 bg-#4D7FED]/10'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                alt='plus'
+                width={8}
+                height={8}
+                className='transition-transform duration-300 rounded-full'
+              />
+            </button>
+          </div>
+        </div>
+        <div className='absolute bottom-[-2%] right-[]'></div>
       </div>
     </div>
   );
