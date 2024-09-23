@@ -3,7 +3,14 @@ import Image from 'next/image';
 import FeatureComponent from './feature-component';
 import Link from 'next/link';
 
-const DynamicTool = ({ subtitle, title, features, centerText, buttonLink }) => {
+const DynamicTool = ({
+  subtitle,
+  title,
+  features,
+  centerText,
+  buttonLink,
+  buttonText,
+}) => {
   return (
     <div className='flex flex-col items-center justify-between space-y-2 bg-gradient-to-b from-[#f0f7ff] to-white w-full px-2 py-3 text-center md:space-y-12 md:px-40 md:py-16 mt-8'>
       <div className='flex items-center gap-2 p-2 px-3 py-1 text-black place-items-center dark:text-white'>
@@ -38,7 +45,9 @@ const DynamicTool = ({ subtitle, title, features, centerText, buttonLink }) => {
         </div>
       </div>
       <Link href={buttonLink}>
-        <button className='inline-flex items-center bg-black text-white text-lg rounded-2xl font-semibold ring-offset-background transition-colors focus-visible:outline-none'></button>
+        <button className='inline-flex items-center bg-black text-white text-lg rounded-2xl font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary px-6 py-4 hover:bg-primary/80'>
+          {buttonText}
+        </button>
       </Link>
     </div>
   );
