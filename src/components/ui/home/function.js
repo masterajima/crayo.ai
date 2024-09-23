@@ -17,7 +17,7 @@ const FunctionPage = () => {
           Ultimate ⭐ tool for Social Media growth
         </h2>
         <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  mt-4'>
-          <p className='text-lg  text-[#000D49B3] w-2/3 text-center'>
+          <p className='text-lg  text-[#000D49B3] lg:w-2/3 text-center'>
             Create unlimited shorts videos at once. Auto generate captions, effects,
             background and music.
           </p>
@@ -79,7 +79,7 @@ const FunctionPage = () => {
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:p-6 p-4 lg:gap-8 gap-10 items-center justify-center '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:p-6  lg:gap-8 gap-10 items-center justify-center '>
         <Card className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
           <div className=' flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
             <div className='absolute  top-0 right-0'>
@@ -185,7 +185,7 @@ const FunctionPage = () => {
             </h3>
 
             <p className='text-[15px] text-[#000d4980] lg:w-2/3'>
-              Turn Instagram reels into exciting content by adding gameplay to keep
+              Turn Instagram reels into exciting content by adding game play to keep
               viewers entertained.
             </p>
           </div>
