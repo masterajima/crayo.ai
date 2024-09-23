@@ -4,34 +4,36 @@ import { Card } from '@/shadcn/ui/card';
 import Image from 'next/image';
 const FunctionPage = () => {
   return (
-    <div className='flex flex-col items-start justify-start bg-[#ffffff] p-[50px] w-full gap-4'>
-      <div className='flex items-start justify-start rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80]'>
+    <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  bg-[#ffffff] md:p-[50px] md:w-full gap-4'>
+      <div className='flex items-center justify-center rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80] w-2/3'>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
-        <p className='text-[16px] font-[Inter] text-[#000d49]'>How it Works</p>
+        <p className='md:text-[16px] text-sm font-[Inter] text-[#000d49]'>
+          How it Works
+        </p>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
       </div>
-      <div className='flex flex-col items-start justify-start  w-1/2'>
-        <h2 className='text-5xl font-semibold text-[#000d49] text-start'>
+      <div className='flex flex-col md:items-start items-center md:justify-start justify-center md:w-1/2 mt-8'>
+        <h2 className='lg:text-5xl text-3xl font-semibold text-[#000d49] md:text-start w-2/3'>
           Ultimate ⭐ tool for Social Media growth
         </h2>
-        <div className='flex flex-col items-start justify-start  mt-4'>
-          <p className='text-lg  text-[#000D49B3] w-2/3'>
+        <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  mt-4'>
+          <p className='text-lg  text-[#000D49B3] w-2/3 text-center'>
             Create unlimited shorts videos at once. Auto generate captions, effects,
             background and music.
           </p>
         </div>
       </div>
-      <div className='flex flex-col items-end justify-end gap-5'>
+      <div className='flex flex-col lg:items-end items-center lg:justify-end justify-center gap-5'>
         <div className='flex flex-col items-end'>
           <div className='flex items-end justify-end gap-3'>
             <Link
               href='https://crayo.ai/dashboard'
-              className='bg-[#dde6ff] flex items-center gap-2 p-2 rounded-3xl px-6'>
-              <div className='w-[24px] h-[24px] z-1 rounded-full bg-white'>
+              className='bg-[#dde6ff] flex items-center gap-2 p-2 rounded-3xl px-3'>
+              <div className='w-[26px] h-[26px] z-1 rounded-full bg-white'>
                 <svg
                   overflow='visible'
-                  width='11'
-                  height='11'
+                  width='23'
+                  height='23'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'>
@@ -43,7 +45,9 @@ const FunctionPage = () => {
                     stroke-width='2'></path>{' '}
                 </svg>
               </div>
-              <p className='text-[#000D49] text-[14px] font-[Inter]'>Try Now</p>
+              <p className='text-[#000D49] lg:text-[14px] text-sm font-[Inter]'>
+                Try Now
+              </p>
             </Link>
           </div>
         </div>
@@ -75,8 +79,8 @@ const FunctionPage = () => {
           </p>
         </div>
       </div>
-      <div className='flex  items-start justify-start lg:p-6 gap-8 '>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:p-6 p-4 lg:gap-8 gap-10 items-center justify-center '>
+        <Card className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
           <div className=' flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
             <div className='absolute  top-0 right-0'>
               <Image
@@ -90,15 +94,17 @@ const FunctionPage = () => {
           </div>
 
           <div className='flex flex-col items-start justify-strat gap-4 mt-[200px]'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
+            <h3 className='text-[#000d49] lg:text-[17px] md:text-[21px] text-xl font-bold'>
+              Instagram Reels
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='text-[15px] text-[#000d4980] md:w-2/3'>
               Turn Instagram reels into exciting conetent by adding gameplay to keep
               viewers entertained.{' '}
             </p>
           </div>
         </Card>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
           <div className=' top-0 right-0 absolute'>
             <Image
               src='/assets/images/tiktok.avif'
@@ -110,15 +116,17 @@ const FunctionPage = () => {
           </div>
 
           <div className='flex flex-col items-start gap-4 mt-[200px]'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>TikTok Videos</h3>
+            <h3 className='text-[#000d49] lg:text-[17px] text-xl font-bold'>
+              TikTok Videos
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='lg:text-[15px] text-[#000d4980] md:w-2/3'>
               Use AI to make money from the CPB program by creating entertaining content
               using Crayo.
             </p>
           </div>
         </Card>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
           <div className=' top-0 right-0  absolute'>
             <Image
               src='/assets/images/cam.avif'
@@ -132,14 +140,14 @@ const FunctionPage = () => {
           <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
             <h3 className='text-[#000d49] text-[17px] font-bold'>Faceless Content</h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='lg:text-[15px] text-xl text-[#000d4980] lg:w-2/3'>
               Create a video using just a script and create captivating content.
             </p>
           </div>
         </Card>
       </div>
-      <div className='flex items-start justify-start gap-8'>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:p-6 p-4 lg:gap-8 gap-10 items-center justify-center '>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8  relative '>
           <div className='absolute top-0 right-0 '>
             <Image
               src='/assets/images/reddit.avif'
@@ -150,10 +158,12 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Reddit Stories</h3>
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4 '>
+            <h3 className='text-[#000d49] lg:text-[17px] text-xl font-bold'>
+              Reddit Stories
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='text-[15px] text-[#000d4980] lg:w-2/3'>
               Use AI to take a Reddit story and turn it into an AI generated video.
             </p>
           </div>
@@ -170,9 +180,11 @@ const FunctionPage = () => {
           </div>
 
           <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>YouTube Shorts</h3>
+            <h3 className='text-[#000d49] lg:text-[17px] text-xl font-bold'>
+              YouTube Shorts
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='text-[15px] text-[#000d4980] lg:w-2/3'>
               Turn Instagram reels into exciting content by adding gameplay to keep
               viewers entertained.
             </p>
@@ -192,9 +204,11 @@ const FunctionPage = () => {
             </div>
 
             <div className='flex flex-col items-start justify-start mt-[200px] gap-4 '>
-              <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
+              <h3 className='text-[#000d49] lg:text-[17px] text-xl font-bold'>
+                Instagram Reels
+              </h3>
 
-              <p className='text-[15px] text-[#000d4980] w-2/3'>
+              <p className='text-[15px] text-[#000d4980] lg:w-2/3'>
                 Turn Instagram reels into exciting content by adding gameplay to keep
                 viewers entertained.
               </p>

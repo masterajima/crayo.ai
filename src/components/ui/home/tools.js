@@ -13,13 +13,23 @@ const ToolsPage = () => {
     features: [
       {
         image: '/assets/images/video.png',
-        title: 'Splitscreen video',
-        position: 'top-[7%] left-[0%] md:top-[8%] md:left-[15%]',
+        title: 'AI avatars',
+        position: 'top-[7%] left-[0%] md:top-[8%] md:left-[%]15',
       },
       {
-        image: '/assets/images/fake-text.png',
-        title: 'Fake text video',
-        position: 'top-[-3%] left-[34%] md:top-[-1%] md:left-[40%]',
+        image: '/assets/images/avatar.png',
+        title: 'AI avatars',
+        position: 'top-[13%] right-[5%] md:top-[8%] md:right-[15%]',
+      },
+      {
+        image: '/assets/images/feature.png',
+        title: 'Youtube downloader',
+        position: 'bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%]',
+      },
+      {
+        image: '/assets/images/voiceover.png',
+        title: 'Voiceover story',
+        position: 'bottom-[-2%] right-[3%] md:bottom-[4%] md:right-[20%]',
       },
     ],
     centerText: 'Use countless viral-tested B-roll, overlays, fonts & more',
