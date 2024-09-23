@@ -5,7 +5,7 @@ import Image from 'next/image';
 const FeatureComponent = ({ image, title }) => {
   return (
     <Card
-      className={`absolute ${position} z-10 max-w-[160px] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5`}>
+      className={`absolute  z-10 max-w-[160px] items-start rounded-xl space-y-2 bg-white text-start p-2.5 shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9f1fe] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5`}>
       <div className='relative aspect-[260/137] w-full'>
         <Image
           src={image}
