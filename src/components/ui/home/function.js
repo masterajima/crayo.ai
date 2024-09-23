@@ -13,7 +13,7 @@ const FunctionPage = () => {
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
       </div>
       <div className='flex flex-col md:items-start items-center md:justify-start justify-center md:w-1/2 mt-8'>
-        <h2 className='lg:text-5xl text-3xl font-semibold text-[#000d49] md:text-start w-2/3'>
+        <h2 className='lg:text-5xl text-3xl font-semibold text-[#000d49] md:text-start '>
           Ultimate ⭐ tool for Social Media growth
         </h2>
         <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  mt-4'>
