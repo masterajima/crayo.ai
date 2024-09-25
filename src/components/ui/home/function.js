@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { Card } from '@/shadcn/ui/card';
 import Image from 'next/image';
-const FunctionPage = () => {
+const FunctionPage = ({ title, description, card }) => {
   return (
-    <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  bg-[#ffffff] md:p-[50px] md:w-full gap-4'>
-      <div className='flex items-center justify-center rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80] w-2/3'>
+    <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  bg-[#ffffff] md:p-[50px] w-full gap-4'>
+      <div className='flex items-center justify-center rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80] '>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
         <p className='md:text-[16px] text-sm font-[Inter] text-[#000d49]'>
           How it Works
@@ -14,13 +14,10 @@ const FunctionPage = () => {
       </div>
       <div className='flex flex-col md:items-start items-center md:justify-start justify-center md:w-1/2 mt-8'>
         <h2 className='lg:text-5xl text-3xl font-semibold text-[#000d49] md:text-start '>
-          Ultimate ⭐ tool for Social Media growth
+          {title}
         </h2>
         <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start  mt-4'>
-          <p className='text-lg  text-[#000D49B3] lg:w-2/3 text-center'>
-            Create unlimited shorts videos at once. Auto generate captions, effects,
-            background and music.
-          </p>
+          <p className='text-lg  text-[#000D49B3] lg:w-2/3 text-center'>{description}</p>
         </div>
       </div>
       <div className='flex flex-col lg:items-end items-center lg:justify-end justify-center gap-5'>
@@ -80,6 +77,11 @@ const FunctionPage = () => {
         </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:p-6  lg:gap-8 gap-10 items-center justify-center '>
+        {card.map((card, index) => (
+          <Card key={index} className='flex flex-col items-start justify bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
+            <div className></div>
+          </Card>
+        ))}
         <Card className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 relative'>
           <div className=' flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
             <div className='absolute  top-0 right-0'>
@@ -98,7 +100,7 @@ const FunctionPage = () => {
               Instagram Reels
             </h3>
 
-            <p className='text-[15px] text-[#000d4980] md:w-2/3'>
+            <p className='lg:text-[15px] text-[#000d4980] w-full'>
               Turn Instagram reels into exciting conetent by adding gameplay to keep
               viewers entertained.{' '}
             </p>
