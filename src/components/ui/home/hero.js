@@ -20,20 +20,13 @@ const Hero = ({
   heroImage,
   features,
 }) => {
-  const menuItems = [
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/blog', label: 'Insight' },
-    { href: 'https://crayo.tolt.io/login', label: 'Affiliate' },
-    { href: '/guide', label: 'Guide' },
-  ];
   return (
     <div className='flex flex-col lg:items-start items-center justify-center lg:justify-start w-full lg:p-18  '>
       <Card className='flex flex-col lg:items-start lg:justify-start items-center justify-center lg:p-18 rounded-3xl bg-white  bg-cover w-full'>
         <div
           className='relative bg-cover  w-full'
           style={{
-            backgroundImage:
-              "url('https://framerusercontent.com/images/J9YwsU9nugMP4hdHntRplOALTI.png')",
+            backgroundImage: `url('${backgroundImage}')`,
           }}>
           <Navbar
             logo={<LogoComponent></LogoComponent>}
