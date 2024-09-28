@@ -11,7 +11,7 @@ import FeatureTag from '@/components/feature-tag';
 const Hero = ({
   backgroundImage,
   logo,
-  menuItem,
+  menuItems,
   tagline,
   title,
   description,

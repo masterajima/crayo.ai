@@ -9,6 +9,12 @@ import ExperiencePage from '@/components/ui/home/experience';
 import LogoComponent from '@/components/logo-component';
 
 const Home = () => {
+  const menuItems = [
+    { href: '/pricing', label: 'Pricing' },
+    { href: '/blog', label: 'Insight' },
+    { href: 'https://crayo.tolt.io/login', label: 'Affiliate' },
+    { href: '/guide', label: 'Guide' },
+  ];
   const testimonialData = {
     title: 'Our Customer ❤️ Us',
     subtitle:

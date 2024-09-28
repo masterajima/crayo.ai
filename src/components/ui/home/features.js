@@ -173,33 +173,14 @@ const FeaturesPage = () => {
           </div>
         </div>
       </CardComponent>
-      <CardComponent className=' w-[30%]'>
-        <div className='flex flex-col items-center justify-center  gap-4 border-[#e9f0ff] bg-[#f9fbff]'>
-          <div className='w-full h-full border-[#e9f0ff]'></div>
-          <div className='flex  items-center justify-center  p-2 bg-[#e4eeff] border-[#e9f0ff] rounded-full'>
-            <p className='text-[10.6px] text-[#000d49]'>Exporting Video...50%</p>
+      <div className='space-y-[2.5] rounded-[20px] border border-blue-300 bg-[#F9F9FF]'>
+        <div className='flex space-x-2.5 px-5 pt-5'>
+          <div className='relative w-8 h-8 flex items-center justify-center rounded-full bg-opacity-20 bg-slate-200 before:absolute '>
+            <p className='text-md text-blue-300 text-[21px] md:text-lg font-bold'>3</p>
           </div>
-          <div className='opacity-1  '>
-            <Image
-              src='/assets/images/circle.avif'
-              alt='circle'
-              width={100}
-              height={100}
-              className='object-cover object-center'
-            />
-          </div>
-          <div className='flex flex-col items-start justify-start gap-4'>
-            <p className='text-[18px] text-[#000d49]'>3-</p>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Finish&Export</h3>
-
-            <div className=''>
-              <p className='text-[15px] text-[#000d4980]'>
-                Choose export format and download generated videos, script or narration.
-              </p>
-            </div>
-          </div>
+          <p className='font-bold text-md md:text-lg'>Finish & Export</p>
         </div>
-      </CardComponent>
+      </div>
     </div>
   );
 };
