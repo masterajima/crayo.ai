@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Card } from '@/shadcn/ui/card';
+import * as LucideIcons from 'lucide-react';
 const FeatureCase = ({ title, subtitle, description, ctaLink, ctaText, features }) => {
   return (
     <div className='flex flex-col md:items-center md:justify-center lg:p-20  w-full'>
@@ -20,15 +21,22 @@ const FeatureCase = ({ title, subtitle, description, ctaLink, ctaText, features 
           </Link>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full'>
-          {features.map((feature, index) => (
-            <Card
-              key={index}
-              className='flex flex-col items-start p-6 bg-white bg-opacity-5 rounded-xl'>
-              <feature.icon className='w-12 h-12 text-white mb-4' />
-              <h3 className='text-xl font-semibold'>{feature.title}</h3>
-              <p className='text-white text-opacity-60'>{feature.description}</p>
-            </Card>
-          ))}
+          {features.map((feature, index) => {
+            const IconComponent = LucideIcons[feature.icon];
+            return (
+              <Card
+                key={index}
+                className='flex flex-col items-start p-6 bg-white bg-opacity-5 rounded-xl'>
+                {IconComponent && (
+                  <IconComponent className='w-12 h-12 text-white mb-4' />
+                )}
+                <h3 className='text-xl font-semibold text-white mb-2'>
+                  {feature.title}
+                </h3>
+                <p className='text-white text-opacity-60'>{feature.description}</p>
+              </Card>
+            );
+          })}
         </div>
       </Card>
     </div>
