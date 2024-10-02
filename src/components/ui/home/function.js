@@ -9,7 +9,7 @@ const FunctionPage = () => {
       imageSrc: '/assets/images/insta.avif',
       title: 'Instagram Reels',
       description:
-        'Turn Instagram reels into exciting content by adding gameplay to keep viewers entertained.',
+        'Turn Instagram reels into exciting content by adding game play to keep viewers entertained.',
     },
     {
       imageSrc: '/assets/images/tiktok.avif',

@@ -14,18 +14,18 @@ const ExperiencePage = () => {
           quality={100}
         />
       </div>
-      <div className='relative z-10 flex flex-col items-start justify-start h-full text-[#000D49] mt-8 p-8 px-12'>
+      <div className='relative z-10 flex flex-col md:items-start md:justify-start items-center justify-center h-full text-[#000D49] mt-8 md:p-8 md:px-12'>
         <div className='flex items-center gap-4 justify-center p-2 border-2 rounded-full px-6 border-[#ffffff66] bg-[#ffffff66] mb-8'>
           <div className='rounded-full w-[3px] h-[3px] bg-[#000d49]'></div>
           <p>How It Works</p>
           <div className='rounded-full w-[3px] h-[3px] bg-[#000d49]'></div>
         </div>
 
-        <div className='flex flex-col items-start justify-start text-start max-w-2xl px-12 '>
-          <h2 className='text-5xl font-bold mb-4'>Experience ⚡Crayo </h2>
+        <div className='flex flex-col md:items-start md:justify-start items-center justify-center text-start max-w-2xl px-12 '>
+          <h2 className='md:text-5xl text-2xl font-bold mb-4'>Experience ⚡Crayo </h2>
         </div>
-        <div className='flex items-center'>
-          <p className='text-lg w-2/4'>
+        <div className='flex md:flex-row flex-col items-center'>
+          <p className='md:text-lg md:w-2/4'>
             Crayo - your gateway to creating viral TikTok clips in seconds! Auto-generate
             captions, effects, background, and music for you.
           </p>
@@ -56,7 +56,7 @@ const ExperiencePage = () => {
           </div>
         </div>
 
-        <div className='flex items-start justify-start  w-[779px] mt-8'>
+        <div className='flex md:items-start md:justify-start items-center justify-center w-[779px] mt-8'>
           <div className='flex items-center  justify-center gap-2 p-2 px-5 border-[#ffffff33] bg-[#ffffff4d] rounded-full'>
             <p className='text-[#000d49] text-sm'>AI Voice</p>
           </div>
@@ -159,7 +159,7 @@ const ExperiencePage = () => {
             </Link>
           </div>
         </div>
-        <div className='flex justify-between gap-10 items-end mt-14'>
+        <div className='flex justify-between gap-10 md:items-end mt-14'>
           <p className='text-[15px] text-[#000d49b3]'>Copyright © 2024 Crayo AI Inc.</p>
           <p className='text-[15px] text-[#000d49b3]'>
             <Link href='https://crayo.ai/terms-condition'>Terms & Conditions</Link>
