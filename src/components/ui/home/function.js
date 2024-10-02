@@ -75,8 +75,8 @@ const FunctionPage = () => {
           </p>
         </div>
       </div>
-      <div className='flex  items-start justify-start lg:p-6 gap-8 '>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8  '>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8  relative w-full'>
           <div className=' flex flex-col  border-[#e9f0ff] bg-[#f2f6ff]'>
             <div className='absolute  top-0 right-0'>
               <Image
@@ -89,10 +89,12 @@ const FunctionPage = () => {
             </div>
           </div>
 
-          <div className='flex flex-col items-start justify-strat gap-4 mt-[200px]'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
+          <div className='flex flex-col items-start justify-strat gap-4 mt-[200px] px-4 w-full'>
+            <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+              Instagram Reels
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='md:text-[15px] text-sm text-[#000d4980] md:w-2/3 w-full '>
               Turn Instagram reels into exciting conetent by adding gameplay to keep
               viewers entertained.{' '}
             </p>
@@ -109,10 +111,12 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start gap-4 mt-[200px]'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>TikTok Videos</h3>
+          <div className='flex flex-col items-start gap-4 mt-[200px] px-4'>
+            <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+              TikTok Videos
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='md:text-[15px] text-sm text-[#000d4980] md:w-2/3'>
               Use AI to make money from the CPB program by creating entertaining content
               using Crayo.
             </p>
@@ -129,17 +133,19 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Faceless Content</h3>
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4 px-4'>
+            <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+              Faceless Content
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='text-[15px] text-[#000d4980] text-sm md:w-2/3'>
               Create a video using just a script and create captivating content.
             </p>
           </div>
         </Card>
       </div>
-      <div className='flex items-start justify-start gap-8'>
-        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
+        <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 relative w-full p-4 '>
           <div className='absolute top-0 right-0 '>
             <Image
               src='/assets/images/reddit.avif'
@@ -150,10 +156,12 @@ const FunctionPage = () => {
             />
           </div>
 
-          <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>Reddit Stories</h3>
+          <div className='flex flex-col items-start justify-start mt-[200px] gap-4 p-4'>
+            <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+              Reddit Stories
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='md:text-[15px] text-sm text-[#000d4980] md:w-2/3'>
               Use AI to take a Reddit story and turn it into an AI generated video.
             </p>
           </div>
@@ -170,9 +178,11 @@ const FunctionPage = () => {
           </div>
 
           <div className='flex flex-col items-start justify-start mt-[200px] gap-4'>
-            <h3 className='text-[#000d49] text-[17px] font-bold'>YouTube Shorts</h3>
+            <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+              YouTube Shorts
+            </h3>
 
-            <p className='text-[15px] text-[#000d4980] w-2/3'>
+            <p className='md:text-[15px] text-sm text-[#000d4980] md:w-2/3'>
               Turn Instagram reels into exciting content by adding gameplay to keep
               viewers entertained.
             </p>
@@ -192,9 +202,11 @@ const FunctionPage = () => {
             </div>
 
             <div className='flex flex-col items-start justify-start mt-[200px] gap-4 '>
-              <h3 className='text-[#000d49] text-[17px] font-bold'>Instagram Reels</h3>
+              <h3 className='text-[#000d49] md:text-[17px] text-xl font-bold'>
+                Instagram Reels
+              </h3>
 
-              <p className='text-[15px] text-[#000d4980] w-2/3'>
+              <p className='md:text-[15px] text-sm  text-[#000d4980] md:w-2/3'>
                 Turn Instagram reels into exciting content by adding gameplay to keep
                 viewers entertained.
               </p>
