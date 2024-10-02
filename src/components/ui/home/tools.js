@@ -18,7 +18,7 @@ const ToolsPage = () => {
         <span className='text-sm font-bold sm:text-base'>Features</span>
       </div>
       <div className='flex flex-col w-full space-y-2 px-4 md:px-20 md:space-y-4'>
-        <h3 className='text-[32px] leading-[120%] md:text-[48px] font-bold w-2/3 text-center mx-auto'>
+        <h3 className='text-[32px] leading-[120%] md:text-[48px] font-bold md:w-2/3 md:text-center md:mx-auto'>
           Crayo has the tools to support any use-case for your short-form content.
         </h3>
       </div>
@@ -98,8 +98,77 @@ const ToolsPage = () => {
             </button>
           </div>
         </div>
-        <div className='absolute bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] z-10'></div>
+        <div className='absolute bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] z-10 max-w-[160px] cursor-pointer items-start rounded-xl bg-white space-y-2 p-2.5 text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className='relative w-full aspect-[260/137]'>
+            <Image
+              src='/assets/images/features-downloader.png'
+              alt='downloader'
+              width={300}
+              height={300}
+              className='rounded-xl object-cover border border-slate-200'
+            />
+          </div>
+          <div className='flex flex-row items-center justify-between space-x-2 md:space-x-4'>
+            <h6 className='max-w-[125px] font-bold text-[14px] leading-[110%] md:tex-[21px]'>
+              AI avatars
+            </h6>
+            <button className='rounded-full p-2 transition-all duration-200 hover:opacity-70'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                width={8}
+                height={8}
+                alt='button'
+                className='transition-transform duration-300'
+              />
+            </button>
+          </div>
+        </div>
+        <div className='absolute bottom-[-2%] right-[3%] md:bottom-[4%] md:right-[20%] z-10 max-w-[160px] cursor-pointer items-start rounded-xl bg-white space-y-2 p-2.5 text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
+          <div className='relative w-full aspect-[260/137]'>
+            <Image
+              src='/assets/images/features-voiceover.png'
+              alt='voiceover'
+              width={300}
+              height={300}
+              className='rounded-xl border border-slate-200 bg-cover'
+            />
+          </div>
+          <div className='flex w-full flex-row items-center justify-between space-x-2 md:space-x-4'>
+            <h6 className='max-w-[125px] font-bold text-[14px] leading-[110%] md:tex-[21px]'>
+              Voiceover story
+            </h6>
+            <button className='rounded-full p-2 transition-all duration-200 hover:opacity-70'>
+              <Image
+                src='/assets/images/plusBlue.png'
+                width={8}
+                height={8}
+                alt='button'
+                className='transition-transform duration-300'
+              />
+            </button>
+          </div>
+        </div>
+        <div className='p-18 align-center flex h-[350px] w-[350px] items-center flex-row justify-center rounded-full md:h-[750px] md:w-[750px]'>
+          <div className='md:p-18 align-center flex h-[275px] w-[275px] rounded-full p-4 bg-[#4d7fed26] md:h-[600px] md:w-[600px] '>
+            <div className='text-[21px] font-bold md:text-[32px] '>
+              <span className='relative inline-block'>
+                <strong>
+                  Use countless viral-tested B-roll, overlays, fonts & more
+                </strong>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
+      <Link href='https://crayo.ai/dashboard'></Link>
+      <button
+        className=' inline-flex items-center justify-center rounded-2xl text-lg
+      font-semibold ring-offset-background focus-visible:outline-none transition-colors
+      focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+      disabled:pointer-events-none disabled:opacity-50 px-6 py-4 bg-primary bg-black text-white
+      text-primary'>
+        Try all Features
+      </button>
     </div>
   );
 };
