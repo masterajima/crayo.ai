@@ -10,12 +10,12 @@ const FunctionPage = () => {
         <p className='text-[16px] font-[Inter] text-[#000d49]'>How it Works</p>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
       </div>
-      <div className='flex flex-col items-start justify-start  w-1/2'>
-        <h2 className='text-5xl font-semibold text-[#000d49] text-start'>
+      <div className='flex flex-col md:items-start md:justify-start items-center justify-center  md:w-1/2'>
+        <h2 className='md:text-5xl text-2xl font-semibold text-[#000d49] text-start'>
           Ultimate ⭐ tool for Social Media growth
         </h2>
-        <div className='flex flex-col items-start justify-start  mt-4'>
-          <p className='text-lg  text-[#000D49B3] w-2/3'>
+        <div className='flex flex-col md:items-start md:justify-start items-center justify-center mt-4'>
+          <p className='md:text-lg text-sm text-[#000D49B3] md:w-2/3 w-full'>
             Create unlimited shorts videos at once. Auto generate captions, effects,
             background and music.
           </p>
@@ -27,11 +27,11 @@ const FunctionPage = () => {
             <Link
               href='https://crayo.ai/dashboard'
               className='bg-[#dde6ff] flex items-center gap-2 p-2 rounded-3xl px-6'>
-              <div className='w-[24px] h-[24px] z-1 rounded-full bg-white'>
+              <div className='w-[20px] h-[20px] z-1 rounded-full bg-white'>
                 <svg
                   overflow='visible'
-                  width='11'
-                  height='11'
+                  width='15'
+                  height='15'
                   viewBox='0 0 24 24'
                   fill='none'
                   xmlns='http://www.w3.org/2000/svg'>
