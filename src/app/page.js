@@ -111,26 +111,39 @@ const Home = () => {
     },
   ];
   return (
-    <div className='flex flex-col justify-start items-start text-center px-6 w-full '>
-      <Hero
-        logoSrc='/assets/images/crayoBlue.png'
-        logoAlt = 'Logo'
-  hamburgerSrc = '/assets/images/hamburger.png'
-  badgeText = 'Trusted by 1.3M+ users'
-  title = 'Generate viral-ready clips in seconds'
-  subtitle = 'Your all-in-one tool for creating AI voice overs, engaging subtitles, optimized game play, and more'
-  ctaLink = '/'
-  ctaText = 'Try Crayo Now'
-  poweredByText = 'Powering top creators on'
-        features={features}
-      />
-      <WorkCrayo />
-      <FeaturesPage />
-      <ToolsPage></ToolsPage>
-      <FunctionPage></FunctionPage>
-      <TestimonialPage {...testimonialData} />
-      <ExperiencePage></ExperiencePage>
-    </div>
+    <>
+      <div className='flex flex-col justify-start items-start text-center px-6 w-full '>
+        <Hero
+          logoSrc='/assets/images/crayoBlue.png'
+          logoAlt='Logo'
+          hamburgerSrc='/assets/images/hamburger.png'
+          badgeText='Trusted by 1.3M+ users'
+          title='Generate viral-ready clips in seconds'
+          subtitle='Your all-in-one tool for creating AI voice overs, engaging subtitles, optimized game play, and more'
+          ctaLink='/'
+          ctaText='Try Crayo Now'
+          poweredByText='Powering top creators on'
+          features={features}
+        />
+        <WorkCrayo
+          tagline='How it Works'
+          title='From Ideas to Short Videos in Seconds'
+          description='Create unlimited shorts videos at once. Auto generate captions, effects, background & music.'
+          ctaLink='https://discord.gg/crayo'
+          ctaText='Join our Discord'
+        />
+        <FeaturesPage />
+        <ToolsPage
+          title='Features'
+          subtitle='Crayo has the tools to support any use-case for your short-form content.'
+          centerText='Use countless viral-tested B-roll, overlays, fonts & more'
+          ctaLink='https://crayo.ai/dashboard'
+          ctaText='Try all Features'></ToolsPage>
+        <FunctionPage></FunctionPage>
+        <TestimonialPage {...testimonialData} />
+        <ExperiencePage></ExperiencePage>
+      </div>
+    </>
   );
 };
 

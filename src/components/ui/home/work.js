@@ -2,13 +2,7 @@ import React from 'react';
 import { Container } from '../containers';
 import Link from 'next/link';
 
-const WorkCrayo = ({
-  tagline = 'How it Works',
-  title = 'From Ideas to Short Videos in Seconds',
-  description = 'Create unlimited shorts videos at once. Auto generate captions, effects, background & music.',
-  ctaLink = 'https://discord.gg/crayo',
-  ctaText = 'Join our Discord',
-}) => {
+const WorkCrayo = ({ tagline, title, description, ctaLink, ctaText }) => {
   return (
     <div className='flex flex-col items-center justify-center w-full'>
       <div className='flex flex-col items-center justify-center font-semibold text-4xl mt-6 w-full'>

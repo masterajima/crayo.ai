@@ -22,6 +22,21 @@ const ToolsPage = ({
       title: 'Fake Texts video',
       position: 'top-[-3%] left-[34%] md:top-[-1%] md:left-[40%]',
     },
+    {
+      image: '/assets/images/features-avatar.png',
+      title: 'Fake Texts video',
+      position: 'top-[13%] right-[5%] md:top-[8%] md:right-[15%] ',
+    },
+    {
+      image: '/assets/images/features-downloader.png',
+      title: 'Fake Texts video',
+      position: 'bottom-[-3%] left-[3%] md:bottom-[4%] md:left-[20%] ',
+    },
+    {
+      image: '/assets/images/features-voiceover.png',
+      title: 'Fake Texts video',
+      position: 'bottom-[-2%] right-[3%] md:bottom-[4%] md:right-[20%] ',
+    },
   ],
 }) => {
   return (
@@ -51,6 +66,14 @@ const ToolsPage = ({
           <div className='md:p-18 align-center flex h-[275px] w-[275px] rounded-full p-4 bg-[#4d7fed26] md:h-[600px] md:w-[600px] '>
             <div className='text-[21px] font-bold md:text-[32px] '>
               <span className='relative inline-block'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'>
+                  <path
+                    d='M12 2l2.4 7.4h7.6l-6 4.6 2.4 7.4-6-4.6-6 4.6 2.4-7.4-6-4.6h7.6z'
+                    fill='#9E7AFF'
+                  />
+                </svg>
                 <strong>{centerText}</strong>
               </span>
             </div>
