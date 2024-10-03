@@ -1,26 +1,30 @@
 import React from 'react';
 import { Card } from '@/shadcn/ui/card';
 import Image from 'next/image';
+import CardComponent from './card';
 
 const FeatureCard = ({ imageSrc, title, description }) => {
   return (
-    <Card className='flex flex-col items-start justify-start bg-[#f2f6ff] border-[#f2f6ff] rounded-3xl lg:p-8 p-4 w-full relative h-full'>
-      <div className='absolute top-0 right-0'>
-        <Image
-          src={imageSrc}
-          alt={title}
-          width={189}
-          height={189}
-          className='object-cover object-top-right'
-        />
+    <CardComponent className='md:w-[30%]'>
+      <div className='flex flex-row space-x-2.5 px-5 pt-5'>
+        <div className='relative rounded-full bg-slate-200 border border-slate-300 flex w-8 h-8 items-center justify-center'>
+          <p className='text-sm text-blue-300'>{number}</p>
+        </div>
+        <p className='text-md md:text-lg font-bold'>{title}</p>
       </div>
-      <div className='flex flex-col items-start justify-start gap-4 w-full mt-[200px]'>
-        <h3 className='text-[#000d49] text-xl md:text-[17px] font-bold'>{title}</h3>
-        <p className='text-sm md:text-[15px] text-[#000d49] w-full md:w-2/3'>
+      <Image
+        src={imageSrc}
+        alt={title}
+        width={1000}
+        height={222}
+        className='w-full'
+      />
+      <div className='p-7'>
+        <p className='text-md font-bold md:text-[18px] text-center leading-[130%]'>
           {description}
         </p>
       </div>
-    </Card>
+    </CardComponent>
   );
 };
 

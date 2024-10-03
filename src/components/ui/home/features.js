@@ -7,29 +7,10 @@ import MaxWordAInput from '@/components/max-word';
 import GenrateScript from '@/components/genrate-script';
 import Image from 'next/image';
 
-const FeaturesPage = () => {
+const FeaturesPage = ({ number, title, imageSrc,description }) => {
   return (
     <div className='flex flex-col lg:flex-row gap-4 items-center md:items-start justify-center md:justify-start lg:p-12 md:p-8  w-full'>
-      <CardComponent className='md:w-[30%]'>
-        <div className='flex flex-row space-x-2.5 px-5 pt-5'>
-          <div className='relative rounded-full bg-slate-200 border border-slate-300 flex w-8 h-8 items-center justify-center'>
-            <p className='text-sm text-blue-300'>1</p>
-          </div>
-          <p className='text-md md:text-lg font-bold'>Write and outline</p>
-        </div>
-        <Image
-          src='/assets/images/stepOne.png'
-          alt='one'
-          width={1000}
-          height={222}
-          className='w-full'
-        />
-        <div className='p-7'>
-          <p className='text-md font-bold md:text-[18px] text-center leading-[130%]'>
-            Start with writing script using a prompt or using template suggestions.
-          </p>
-        </div>
-      </CardComponent>
+    
       <CardComponent className='md:w-[30%]'>
         <div className='flex flex-row space-x-2.5 px-5 pt-5'>
           <div className='relative h-8 w-8 flex items-center justify-center rounded-full border border-slate-300 bg-slate-200 bg-opacity-20 '>
