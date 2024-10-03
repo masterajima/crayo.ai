@@ -7,10 +7,10 @@ import ToolCard from '@/components/tool-card';
 
 const ToolsPage = ({
   title = 'Features',
-  subtitle = 'Crayo has the tools to support any use-case for your short-form content.',
-  centerText = 'Use countless viral-tested B-roll, overlays, fonts & more',
-  ctaLink = 'https://crayo.ai/dashboard',
-  ctaText = 'Try all Features',
+  subtitle,
+  centerText,
+  ctaLink,
+  ctaText,
   features = [
     {
       image: '/assets/images/features-video.png',
