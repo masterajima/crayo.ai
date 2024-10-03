@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const WorkCrayo = () => {
   return (
-    <div className='flex flex-col items-start justify-start lg:items-start lg:justify-start w-full'>
-      <div className='flex flex-col items-start md:items-start justify-center md:justify-start font-semibold text-4xl mt-6 w-full'>
+    <div className='flex flex-col items-center justify-center w-full'>
+      <div className='flex flex-col items-center justify-center font-semibold text-4xl mt-6 w-full'>
         <div className='flex px-6 rounded-full py-2 bg-gradient-to-br from-[#dbf0ff] to-[#dfe2ff] via-[#dfe2ff] p-3'>
           <div className='flex items-center gap-6'>
             <div className='w-2 h-2 rounded-full  bg-[#000d49]'></div>
