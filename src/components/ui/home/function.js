@@ -48,8 +48,8 @@ const FunctionPage = ({
     },
   ];
   return (
-    <div className='flex flex-col items-start justify-start bg-[#ffffff] md:p-[50px] w-full gap-4'>
-      <div className='flex items-start justify-start rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80]'>
+    <div className='flex flex-col items-center  justify-center bg-[#ffffff] md:p-[50px] w-full gap-4'>
+      <div className='flex items-center justify-center rounded-full p-2 gap-3 bg-gradient-to-r from-[#dbf0ff] via-[#f6dfff] to-[#dfe2ff] border-[#ffffff80]'>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
         <p className='text-[16px] font-[Inter] text-[#000d49]'>How it Works</p>
         <div className='bg-[#000d49] rounded-full w-3 h-3'></div>
