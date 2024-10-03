@@ -1,9 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { Card } from '@/shadcn/ui/card';
+import WorkCard from '@/components/work-card';
 import Image from 'next/image';
 import FeatureCard from '@/components/feature-card';
-const FunctionPage = () => {
+const FunctionPage = ({
+  title = 'Ultimate ⭐ tool for Social Media growth',
+  description = 'Create unlimited shorts videos at once. Auto generate captions, effects, background and music.',
+  ctaLink = 'https://crayo.ai/dashboard',
+  ctaText = 'Try Now',
+}) => {
   const features = [
     {
       imageSrc: '/assets/images/insta.avif',
@@ -50,12 +56,11 @@ const FunctionPage = () => {
       </div>
       <div className='flex flex-col md:items-start md:justify-start items-center justify-center  md:w-1/2'>
         <h2 className='md:text-5xl text-2xl font-semibold text-[#000d49] text-start'>
-          Ultimate ⭐ tool for Social Media growth
+          {title}
         </h2>
         <div className='flex flex-col md:items-start md:justify-start items-center justify-center mt-4'>
           <p className='md:text-lg text-sm text-[#000D49B3] md:w-2/3 w-full'>
-            Create unlimited shorts videos at once. Auto generate captions, effects,
-            background and music.
+            {description}
           </p>
         </div>
       </div>
@@ -63,7 +68,7 @@ const FunctionPage = () => {
         <div className='flex flex-col items-end'>
           <div className='flex items-end justify-end gap-3'>
             <Link
-              href='https://crayo.ai/dashboard'
+              href={ctaLink}
               className='bg-[#dde6ff] flex items-center gap-2 p-2 rounded-3xl px-6'>
               <div className='w-[20px] h-[20px] z-1 rounded-full bg-white'>
                 <svg
@@ -81,7 +86,7 @@ const FunctionPage = () => {
                     stroke-width='2'></path>{' '}
                 </svg>
               </div>
-              <p className='text-[#000D49] text-[14px] font-[Inter]'>Try Now</p>
+              <p className='text-[#000D49] text-[14px] font-[Inter]'>{ctaText}</p>
             </Link>
           </div>
         </div>
@@ -115,9 +120,9 @@ const FunctionPage = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8  '>
         {features.map((feature, index) => (
-          <FeatureCard
+          <WorkCard
             key={index}
-            {...feature}></FeatureCard>
+            {...feature}></WorkCard>
         ))}
       </div>
     </div>
