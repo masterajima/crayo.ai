@@ -117,7 +117,7 @@ const Home = () => {
         logo={<LogoComponent />}
         menuItems={menuItems}
         tagline='Experience Creative Freedom'
-        title='The fastest ✨ way to create Short Videos'
+        title='Generate viral-ready clips in seconds'
         description='Create unlimited short videos at once. Auto generate captions, effects, background & music.'
         ctaPrimary={{ href: 'https://crayo.ai/dashboard', label: 'Try now' }}
         ctaSecondary={{ href: '#learn-more', label: 'Learn More' }}

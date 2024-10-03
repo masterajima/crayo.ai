@@ -16,7 +16,8 @@ const Hero = ({
   title = 'Generate viral-ready clips in seconds',
   subtitle = 'Your all-in-one tool for creating AI voice overs, engaging subtitles, optimized game play, and more',
   ctaLink = '/',
-  ctaText = 'Try Now',
+  ctaText = 'Try Crayo Now',
+  poweredByText = 'Powering top creators on',
   plateformLogos = [
     { src: '/assets/images/hero-tiktok.png', alt: 'TikTok', width: 110, height: 48 },
     {
@@ -111,7 +112,7 @@ const Hero = ({
               </div>
             </Link>
             <div className='mt-8 pb-24'>
-              <p className='text-md mb-4 md:text-xl'>Powering top creators on</p>
+              <p className='text-md mb-4 md:text-xl'>{poweredByText}</p>
               <div className='align-center flex justify-center space-x-4 md:space-x-8'>
                 {plateformLogos.map((logo, index) => (
                   <Image
