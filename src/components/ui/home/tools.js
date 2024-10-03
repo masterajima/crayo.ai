@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import FeatureCase from '@/components/feature-case';
 
-const ToolsPage = () => {
+const ToolsPage = ({ title, subtitle, features }) => {
   return (
     <div className='flex flex-col items-center justify-between space-y-8 bg-gradient-to-b from-[F0F7FF] to-white px-4 py-3 text-center md:space-y-12 md:px-14 md:py-16'>
       <div className='relative w-fit place-items-center text-center text-black dark:bg-black inline-flex items-center dark:text-white rounded-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white bg-opacity-20'>
@@ -15,14 +15,17 @@ const ToolsPage = () => {
           height={16}
           className='mr-2'
         />
-        <span className='text-sm font-bold sm:text-base'>Features</span>
+        <span className='text-sm font-bold sm:text-base'>{title}</span>
       </div>
       <div className='flex flex-col w-full space-y-2 px-4 md:px-20 md:space-y-4'>
         <h3 className='text-[32px] leading-[120%] md:text-[48px] font-bold md:w-2/3 md:text-center md:mx-auto'>
-          Crayo has the tools to support any use-case for your short-form content.
+          {subtitle}
         </h3>
       </div>
       <div className='align-center relative flex w-full items-center justify-center pt-10'>
+        {features.map((feature,index)=>(
+          <></>
+        ))}
         <div className='absolute top-[7%] left-[0%] md:top-[8%] md:left-[15%] max-w-[160px] z-10 cursor-pointer items-start rounded-xl bg-white space-y-2 p-2.5 text-start shadow-[0_13px_22px_rgba(0,0,0,0.10)] transition-colors duration-300 hover:bg-[#E9F1FE] md:max-w-[275px] md:space-y-5 md:rounded-3xl md:p-5'>
           <div className='relative aspect-[260/137] w-full'>
             <Image
