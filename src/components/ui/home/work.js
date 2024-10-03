@@ -2,7 +2,13 @@ import React from 'react';
 import { Container } from '../containers';
 import Link from 'next/link';
 
-const WorkCrayo = () => {
+const WorkCrayo = ({
+  tagline = 'How it Works',
+  title = 'From Ideas to Short Videos in Seconds',
+  description = 'Create unlimited shorts videos at once. Auto generate captions, effects, background & music.',
+  ctaLink = 'https://discord.gg/crayo',
+  ctaText = 'Join our Discord',
+}) => {
   return (
     <div className='flex flex-col items-center justify-center w-full'>
       <div className='flex flex-col items-center justify-center font-semibold text-4xl mt-6 w-full'>
@@ -11,35 +17,30 @@ const WorkCrayo = () => {
             <div className='w-2 h-2 rounded-full  bg-[#000d49]'></div>
 
             <p className='text-[#000d49] font-medium text-sm text-center mx-auto'>
-              How it Works
+              {tagline}
             </p>
             <div className='w-2 h-2 rounded-full  bg-[#000d49] '></div>
           </div>
         </div>
         <div className='flex flex-col items-center md:items-center mt-6 '>
-          <h2 clssName='font-bold lg:text-[35px] text-4xl text-blue-900'>
-            From Ideas to Short Videos in Second
-          </h2>
+          <h2 clssName='font-bold lg:text-[35px] text-4xl text-blue-900'>{title}</h2>
         </div>
       </div>
       <div className='flex flex-col items-start justify-start'>
-        <p className='text-gray-400 text-[15px] text-[#000D49B3]'>
-          Create unlimited shorts videos at once. Auto generate captions, effects,
-          background &amp; music.
-        </p>
+        <p className='text-gray-400 text-[15px] text-[#000D49B3]'>{description}</p>
       </div>
       <div className='flex items-end justify-end mt-8'>
         <Link
-          href='https://discord.gg/crayo'
-          className='bg-[#dde6ff] p-2 px-8 py-2 flex gap-8 rounded-full'>
-          <div className=' w-[16px] h-[16px] bg-white rounded-full flex z-2'>
+          href={ctaLink}
+          className='bg-[#dde6ff] p-2 px-6 py-2 flex gap-4 rounded-full'>
+          <div className=' w-[26px] h-[26px] bg-white rounded-full flex z-2'>
             <div className='flex  items-center justify-center z-2'>
-              <div className='w-[16px] h-[16px] z-1'>
+              <div className='w-[20px] h-[20px] z-1'>
                 <div className='flex flex-col items-center'>
                   <svg
                     overflow='visible'
-                    width='16'
-                    height='16'
+                    width='22'
+                    height='22'
                     viewBox='0 0 24 24'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'>
@@ -55,7 +56,7 @@ const WorkCrayo = () => {
             </div>
           </div>
           <div className='flex flex-col z-1'>
-            <p className='text-[#000d49] text-sm '>join our Discord</p>
+            <p className='text-[#000d49] text-sm font-bold '>{ctaText}</p>
           </div>
         </Link>
       </div>
