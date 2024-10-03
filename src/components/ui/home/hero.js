@@ -9,15 +9,15 @@ import LogoComponent from '@/components/logo-component';
 import FeatureTag from '@/components/feature-tag';
 
 const Hero = ({
-  logoSrc = '/assets/images/crayoBlue.png',
-  logoAlt = 'Logo',
-  hamburgerSrc = '/assets/images/hamburger.png',
-  badgeText = 'Trusted by 1.3M+ users',
-  title = 'Generate viral-ready clips in seconds',
-  subtitle = 'Your all-in-one tool for creating AI voice overs, engaging subtitles, optimized game play, and more',
-  ctaLink = '/',
-  ctaText = 'Try Crayo Now',
-  poweredByText = 'Powering top creators on',
+  title,
+  logoSrc,
+  logoAlt,
+  hamburgerSrc,
+  badgeText,
+  subtitle,
+  ctaLink,
+  ctaText,
+  poweredByText,
   plateformLogos = [
     { src: '/assets/images/hero-tiktok.png', alt: 'TikTok', width: 110, height: 48 },
     {

@@ -113,15 +113,15 @@ const Home = () => {
   return (
     <div className='flex flex-col justify-start items-start text-center px-6 w-full '>
       <Hero
-        backgroundImage='https://framerusercontent.com/images/J9YwsU9nugMP4hdHntRplOALTI.png'
-        logo={<LogoComponent />}
-        menuItems={menuItems}
-        tagline='Experience Creative Freedom'
-        title='Generate viral-ready clips in seconds'
-        description='Create unlimited short videos at once. Auto generate captions, effects, background & music.'
-        ctaPrimary={{ href: 'https://crayo.ai/dashboard', label: 'Try now' }}
-        ctaSecondary={{ href: '#learn-more', label: 'Learn More' }}
-        heroImage='/assets/images/genrate.avif'
+        logoSrc='/assets/images/crayoBlue.png'
+        logoAlt = 'Logo'
+  hamburgerSrc = '/assets/images/hamburger.png'
+  badgeText = 'Trusted by 1.3M+ users'
+  title = 'Generate viral-ready clips in seconds'
+  subtitle = 'Your all-in-one tool for creating AI voice overs, engaging subtitles, optimized game play, and more'
+  ctaLink = '/'
+  ctaText = 'Try Crayo Now'
+  poweredByText = 'Powering top creators on'
         features={features}
       />
       <WorkCrayo />
