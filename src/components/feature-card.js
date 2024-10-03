@@ -3,7 +3,7 @@ import { Card } from '@/shadcn/ui/card';
 import Image from 'next/image';
 import CardComponent from './card';
 
-const FeatureCard = ({ imageSrc, title, description }) => {
+const FeatureCard = ({ number, imageSrc, title, description }) => {
   return (
     <CardComponent className='md:w-[30%]'>
       <div className='flex flex-row space-x-2.5 px-5 pt-5'>
